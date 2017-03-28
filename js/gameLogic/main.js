@@ -9,7 +9,8 @@ var velocityOfTileMoving = 10,
     sizeOfPlayer = 0.5,
     me,
     spaceBar,
-    jumpTimer = 0;
+    jumpTimer = 0,
+    background;
 
 Main.prototype = {
 
@@ -32,12 +33,14 @@ Main.prototype = {
 		//Set the background colour to blue
 		me.game.stage.backgroundColor = '479cde';
 
-        me.game.add.tileSprite(0, 0, me.game.width, me.game.height, 'back');
+        background = me.game.add.tileSprite(0, 0, me.game.width, me.game.height, 'back');
+
 
 		//Enable the Arcade physics system
 		me.game.physics.startSystem(Phaser.Physics.ARCADE);
 
 		//Add a platforms group to hold all of our tiles, and create a bunch of them
+        // me.platforms = me.game.add.physicsGroup();
 		me.platforms = me.game.add.group();
 		me.platforms.enableBody = true;
 		me.platforms.createMultiple(100, 'tile');
@@ -55,12 +58,23 @@ Main.prototype = {
 		//Add a platform every speedOfTileGenerating seconds
 		me.timer = game.time.events.loop(speedOfTileGenerating, me.addPlatform, me);
 
+        game.time.events.loop(Phaser.Timer.SECOND * 10, me.changePicture, me);
+
 	    //Enable cursor keys so we can create some controls
 	    me.cursors = me.game.input.keyboard.createCursorKeys();  
 	},
 
+    changePicture: function()
+    {
+        var numberOfThePicture = getRandomInt(0, 101);
+        background.loadTexture(numberOfThePicture + "");
+    },
+
+
 	update: function()
     {
+       background.tilePosition.y += 2;
+
 
 		//Make the sprite collide with the ground layer
 		me.game.physics.arcade.collide(me.player, me.platforms);
@@ -98,6 +112,8 @@ Main.prototype = {
            // animateRunRight();
 
             me.player.body.velocity.x = speedOfPlayerMovingRightLeft;
+
+           // background1 = me.game.add.tileSprite(0, 0, me.game.width, me.game.height, 'back');
 
             // if(facing != 'right')
             // {
@@ -271,9 +287,7 @@ function animateRunLeft()
 function jumpHasToOccur()
 {
     var jumButtonClicked = me.cursors.up.isDown || spaceBar.isDown;
-    console.log("jumpButtonClicked == " + jumButtonClicked );
     var alreadyOnFloor = me.player.body.onFloor() && me.game.time.now > jumpTimer;
-    console.log("alreadyOnFloor == " + alreadyOnFloor);
     return jumButtonClicked && alreadyOnFloor;
 }
 
@@ -319,3 +333,12 @@ function animateAttackMagic()
     me.player.animations.play('attackMagic', 3, false, false);
     me.player.animations.currentAnim.onComplete.add(beIdle,this);
 }
+
+function getRandomInt(min, max)
+{return Math.floor(Math.random() * (max - min + 1)) + min;}
+
+
+
+
+
+
