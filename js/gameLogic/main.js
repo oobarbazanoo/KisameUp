@@ -75,7 +75,6 @@ Main.prototype = {
     {
        background.tilePosition.y += 2;
 
-
 		//Make the sprite collide with the ground layer
 		me.game.physics.arcade.collide(me.player, me.platforms);
 
@@ -95,13 +94,11 @@ Main.prototype = {
         //endregion
 
         //Check if the player is touching the bottom
-        if(me.player.body.position.y >= me.game.world.height - me.player.body.height){
+        if(me.playerForAnimation.body.position.y >= me.game.world.height - me.playerForAnimation.body.height){
 	    	me.gameOver();
         }
 
         me.game.input.keyboard.onDownCallback = somethingWasPressed;
-
-        me.player.body.velocity.x = 0;
 
         if(me.cursors.left.isDown)
         {
@@ -109,11 +106,7 @@ Main.prototype = {
         }
         else if(me.cursors.right.isDown)
         {
-           // animateRunRight();
-
-            me.player.body.velocity.x = speedOfPlayerMovingRightLeft;
-
-           // background1 = me.game.add.tileSprite(0, 0, me.game.width, me.game.height, 'back');
+           animateRunRight();
 
             // if(facing != 'right')
             // {
@@ -125,18 +118,11 @@ Main.prototype = {
         }
         else
         {
+            me.playerForAnimation.body.velocity.x = 0;
+
             if(facing != 'idle')
             {
-                me.player.animations.play('idle');
-
-                if(facing == 'left')
-                {
-                    me.player.frame = 5;
-                }
-                else
-                {
-                    me.player.frame = 5;
-                }
+                me.playerForAnimation.animations.play('idle');
 
                 facing = 'idle';
             }
@@ -144,11 +130,11 @@ Main.prototype = {
 
         if(jumpHasToOccur())
         {
-            me.player.body.velocity.y = -250;
+            me.playerForAnimation.body.velocity.y = -1150;
 
-            me.player.animations.play('jump');
+            me.playerForAnimation.animations.play('jump');
 
-            me.game.time.events.add(Phaser.Timer.SECOND * 1.450, function(){me.player.animations.play('idle');}, this);
+            me.game.time.events.add(Phaser.Timer.SECOND * 1.450, function(){me.playerForAnimation.animations.play('idle');}, this);
 
             jumpTimer = me.game.time.now + 750;
         }
@@ -214,28 +200,27 @@ Main.prototype = {
 	createPlayer: function()
     {
 		//Add the player to the game by creating a new sprite
-		me.player = me.game.add.sprite(me.game.world.centerX, me.game.world.height - (me.spacing * 2 + (3 * me.tileHeight)), 'kisameSprite', 'stance/0.png');
 
-		me.player.scale.setTo(sizeOfPlayer);
+        me.player = me.game.add.physicsGroup(Phaser.Physics.ARCADE);
+        me.player.enableBody = true;
+        me.playerForAnimation = me.game.make.sprite(0, 0, 'kisameSprite', 'stance/0.png');
+        me.player.addChild(me.playerForAnimation);
+        me.playerForAnimation.scale.setTo(sizeOfPlayer);
 
-		//Set the players anchor point to be in the middle horizontally
-		me.player.anchor.setTo(0.5, 1);
 		//Enable physics on the player
 		me.game.physics.arcade.enable(me.player);
 		//Make the player fall by applying gravity
-		me.player.body.gravity.y = 2000;
+		me.playerForAnimation.body.gravity.y = 2000;
 		//Make the player collide with the game boundaries 
-		me.player.body.collideWorldBounds = true;
+		me.playerForAnimation.body.collideWorldBounds = true;
 		//Make the player bounce a little
-		me.player.body.bounce.y = 0.1;
+		me.playerForAnimation.body.bounce.y = 0.1;
 
-
-        me.player.animations.add('attackMagic', Phaser.Animation.generateFrameNames('attackMagic/', 0, 24, '.png', 1), 7, false, true);
-        me.player.animations.add('attack', Phaser.Animation.generateFrameNames('attack/', 0, 5, '.png', 1), 10, false, true);
-        me.player.animations.add('left', Phaser.Animation.generateFrameNames('run/', 0, 4, '.png', 1), 10, true, true);
-        me.player.animations.add('idle', Phaser.Animation.generateFrameNames('stance/', 0, 3, '.png', 1), 10, true, true);
-        me.player.animations.add('right', Phaser.Animation.generateFrameNames('run/', 0, 4, '.png', 1), 10, true, true);
-        me.player.animations.add('jump', Phaser.Animation.generateFrameNames('jump/', 0, 3, '.png', 1), 10, false, true);
+        me.playerForAnimation.animations.add('attackMagic', Phaser.Animation.generateFrameNames('attackMagic/', 0, 24, '.png', 1), 7, false, true);
+        me.playerForAnimation.animations.add('attack', Phaser.Animation.generateFrameNames('attack/', 0, 5, '.png', 1), 10, false, true);
+        me.playerForAnimation.animations.add('run', Phaser.Animation.generateFrameNames('run/', 0, 4, '.png', 1), 10, true, true);
+        me.playerForAnimation.animations.add('idle', Phaser.Animation.generateFrameNames('stance/', 0, 3, '.png', 1), 10, true, true);
+        me.playerForAnimation.animations.add('jump', Phaser.Animation.generateFrameNames('jump/', 0, 3, '.png', 1), 10, false, true);
 
 	},
 
@@ -260,26 +245,27 @@ Main.prototype = {
 
 function animateRunRight()
 {
-    me.player.body.velocity.x = speedOfPlayerMovingRightLeft;
+    me.playerForAnimation.body.velocity.x = speedOfPlayerMovingRightLeft;
 
     if(facing != 'right')
     {
-        me.player.scale.setTo(sizeOfPlayer, sizeOfPlayer);
+        me.playerForAnimation.scale.setTo(sizeOfPlayer, sizeOfPlayer);
 
-        me.player.animations.play('right');
+        me.playerForAnimation.animations.play('run');
         facing = 'right';
     }
 }
 
 function animateRunLeft()
 {
-    me.player.body.velocity.x = -speedOfPlayerMovingRightLeft;
+    me.playerForAnimation.body.velocity.x = -speedOfPlayerMovingRightLeft;
 
     if(facing != 'left')
     {
-        me.player.scale.setTo(-sizeOfPlayer, sizeOfPlayer);
+        me.playerForAnimation.scale.setTo(-sizeOfPlayer, sizeOfPlayer);
 
-        me.player.animations.play('left');
+        me.playerForAnimation.animations.play('run');
+
         facing = 'left';
     }
 }
@@ -287,7 +273,7 @@ function animateRunLeft()
 function jumpHasToOccur()
 {
     var jumButtonClicked = me.cursors.up.isDown || spaceBar.isDown;
-    var alreadyOnFloor = me.player.body.onFloor() && me.game.time.now > jumpTimer;
+    var alreadyOnFloor = me.playerForAnimation.body.touching.down  && me.game.time.now > jumpTimer;
     return jumButtonClicked && alreadyOnFloor;
 }
 
@@ -308,7 +294,7 @@ function keyEqualTo(keyCode, key)
 
 function beIdle()
 {
-    me.player.animations.play('idle');
+    me.playerForAnimation.animations.play('idle');
 
     if(facing == 'left')
     {
@@ -324,14 +310,14 @@ function beIdle()
 
 function animateAttack()
 {
-    me.player.animations.play('attack', 10, false, false);
-    me.player.animations.currentAnim.onComplete.add(beIdle,this);
+    me.playerForAnimation.animations.play('attack', 10, false, false);
+    me.playerForAnimation.animations.currentAnim.onComplete.add(beIdle,this);
 }
 
 function animateAttackMagic()
 {
-    me.player.animations.play('attackMagic', 3, false, false);
-    me.player.animations.currentAnim.onComplete.add(beIdle,this);
+    me.playerForAnimation.animations.play('attackMagic', 3, false, false);
+    me.playerForAnimation.animations.currentAnim.onComplete.add(beIdle,this);
 }
 
 function getRandomInt(min, max)
