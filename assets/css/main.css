@@ -22,9 +22,11 @@ body {
   text-align: center;
 }
 .info {
+  border: 4px solid #5bc0de;
+  outline: none;
   display: inline-block;
   font: bold 20px "Yu Gothic Light";
-  color: white !important;
+  color: #5bc0de;
   border-radius: 10px;
   margin: 10px;
 }

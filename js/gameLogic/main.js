@@ -190,7 +190,7 @@ Main.prototype = {
 
 		var scoreFont = "100px Arial";
 
-		me.scoreLabel = me.game.add.text((me.game.world.centerX), 100, "0", {font: scoreFont, fill: "#fff"}); 
+		me.scoreLabel = me.game.add.text((me.game.world.centerX), 100, "0", {font: scoreFont, fill: "#5bc0de"});
 		me.scoreLabel.anchor.setTo(0.5, 0.5);
 		me.scoreLabel.align = 'center';
 
