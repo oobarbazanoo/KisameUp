@@ -1,12 +1,30 @@
 .border {
-  border: 4px solid mediumpurple;
+  border: 4px solid #5bc0de;
   outline: none;
 }
 #gameWindow {
   text-align: center;
 }
 #gameWindow canvas {
-  border: 4px solid mediumpurple;
+  border: 4px solid #5bc0de;
   outline: none;
   margin: auto;
+}
+.videoInBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+body {
+  text-align: center;
+}
+.info {
+  display: inline-block;
+  font: bold 20px "Yu Gothic Light";
+  color: white !important;
+  border-radius: 10px;
+  margin: 10px;
 }
