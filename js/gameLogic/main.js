@@ -12,7 +12,7 @@ var velocityOfTileMoving = 10,
     jumpTimer = 0,
     background,
     enemySpeed = 50,
-    lastNumberOfPicture = 101;
+    lastNumberOfPicture = 117;
 
 Main.prototype = {
 
@@ -83,6 +83,8 @@ Main.prototype = {
         me.game.physics.arcade.collide(me.enemies, me.platforms);
 
         me.game.physics.arcade.collide(me.enemies, me.player);
+
+        me.enemies.children.forEach(checkForPlayerAttack, this);
 
         //Check if the player is touching the bottom
         if(me.playerForAnimation.body.position.y >= me.game.world.height - me.playerForAnimation.body.height)
@@ -171,8 +173,6 @@ Main.prototype = {
         me.playerForAnimation.activeAttack = false;
 
         me.game.physics.arcade.enable(me.player);
-        me.playerForAnimation.body.onCollide = new Phaser.Signal();
-        me.playerForAnimation.body.onCollide.add(animateFightingPlayer, this);
 		me.playerForAnimation.body.gravity.y = 2000;
 		me.playerForAnimation.body.collideWorldBounds = true;
 		me.playerForAnimation.body.bounce.y = 0.1;
@@ -315,6 +315,8 @@ function configureEnemy(enemy)
     enemy.body.onCollide = new Phaser.Signal();
     enemy.body.onCollide.add(animateFighting, this);
 
+    enemy.body.collideWorldBounds = true;
+
     enemy.body.gravity.y = 2000;
     enemy.body.bounce.y = 0.1;
 
@@ -356,6 +358,7 @@ function itIs(name, sprite)
 
 function enemyLogic(enemy)
 {
+    enemy.figting = false;
     if(getRandomInt(0, 1) == 0)
     {runRight(enemy);}
     else
@@ -411,23 +414,35 @@ function getRandomTileStyle()
     return "tile" + number;
 }
 
-function animateFightingPlayer(player, enemy)
+function checkForPlayerAttack(enemy)
 {
-    if(itIs("kabutoSprite", enemy) || itIs("narutoSprite", enemy))
+    if(enemy.body.position.y >= me.game.world.height - enemy.body.height)
+    {
+        enemy.kill();
+        me.enemies.remove(enemy);
+    }
+
+    if(enemy.overlap(me.playerForAnimation))
     {
         if(facing == "attack" || facing == "attackMagic")
         {
-            game.time.events.add(Phaser.Timer.SECOND * 0.2, function()
-            {
                 enemy.kill();
+                me.enemies.remove(enemy);
                 me.incrementScore();
-            }, me);
-
+        }
+        else if(!enemy.figting)
+        {
+            enemy.figting = true;
+            enemy.animations.play(getRandomAttack());
+            enemy.animations.currentAnim.onComplete.add(function()
+            {
+                if(enemy.overlap(me.playerForAnimation))
+                {me.gameOver();}
+                enemyLogic(enemy);
+            },this);
         }
     }
 }
-
-
 
 
 

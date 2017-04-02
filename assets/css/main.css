@@ -1,13 +1,18 @@
 .border {
-  border: 4px solid #5bc0de;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: 7px solid #5bc0de;
   outline: none;
+  border-radius: 10px;
 }
 #gameWindow {
   text-align: center;
+  overflow: hidden;
 }
 #gameWindow canvas {
-  border: 4px solid #5bc0de;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: 7px solid #5bc0de;
   outline: none;
+  border-radius: 10px;
   margin: auto;
 }
 .videoInBackground {
@@ -16,17 +21,18 @@
   left: 0;
   right: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 body {
   text-align: center;
 }
 .info {
-  border: 4px solid #5bc0de;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: 7px solid #5bc0de;
   outline: none;
+  border-radius: 10px;
   display: inline-block;
   font: bold 20px "Yu Gothic Light";
   color: #5bc0de;
-  border-radius: 10px;
   margin: 10px;
 }

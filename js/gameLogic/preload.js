@@ -14,8 +14,8 @@ Preload.prototype = {
         this.game.load.image('tile4', 'assets/tiles/4.png');
         this.game.load.image('tile5', 'assets/tiles/5.png');
 
-        for(var i = 0; i <= 101; i++)
-        {this.game.load.image(i + "", "assets/images/game/" + i + " .jpg");}
+        for(var i = 0; i <= 117; i++)
+        {this.game.load.image(i + "", "assets/images/game/" + i + ".jpg");}
 
     },
 
