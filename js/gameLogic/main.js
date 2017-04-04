@@ -12,7 +12,9 @@ var velocityOfTileMoving = 10,
     jumpTimer = 0,
     background,
     enemySpeed = 50,
-    lastNumberOfPicture = 117;
+    lastNumberOfPicture = 117,
+    kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud;
+
 
 Main.prototype = {
 
@@ -64,6 +66,9 @@ Main.prototype = {
 
 	    //Enable cursor keys so we can create some controls
 	    me.cursors = me.game.input.keyboard.createCursorKeys();
+
+
+	    addAudio();
 	},
 
     changePicture: function()
@@ -103,8 +108,10 @@ Main.prototype = {
         {animateJump();}
 	},
 
-	gameOver: function(){
-		this.game.state.start('Main');
+	gameOver: function()
+    {
+        stopAllSounds();
+        this.game.state.start('Main');
 	},
 
 	addTile: function(x, y)
@@ -206,6 +213,9 @@ Main.prototype = {
 
 function animateRunRight()
 {
+
+    playRunSound();
+
     me.playerForAnimation.body.velocity.x = speedOfPlayerMovingRightLeft;
 
     if(facing != 'right')
@@ -217,8 +227,19 @@ function animateRunRight()
     }
 }
 
+function playRunSound()
+{
+    if(!kisameRunAud.isPlaying)
+    {
+        stopAllSounds();
+        kisameRunAud.restart();
+    }
+}
+
 function animateRunLeft()
 {
+    playRunSound();
+
     me.playerForAnimation.body.velocity.x = -speedOfPlayerMovingRightLeft;
 
     if(facing != 'left')
@@ -264,6 +285,11 @@ function keyEqualTo(keyCode, key)
 
 function animateAttack()
 {
+    if(!kisameAttackAud.isPlaying)
+    {
+        stopAllSounds();
+        kisameAttackAud.restart();
+    }
     me.playerForAnimation.animations.play('attack', 10, false, false);
     me.playerForAnimation.animations.currentAnim.onComplete.add(beIdle,this);
     facing = "attack";
@@ -271,7 +297,12 @@ function animateAttack()
 
 function animateAttackMagic()
 {
-    me.playerForAnimation.animations.play('attackMagic', 10, false, false);
+    if(!kisameAttackMagicAud.isPlaying)
+    {
+        stopAllSounds();
+        kisameAttackMagicAud.restart();
+    }
+    me.playerForAnimation.animations.play('attackMagic', 3, false, false);
     me.playerForAnimation.animations.currentAnim.onComplete.add(beIdle,this);
     facing = "attackMagic";
 }
@@ -284,6 +315,13 @@ function animating()
 
 function animateJump()
 {
+
+    if(!kisameJumpAud.isPlaying)
+    {
+        stopAllSounds();
+        kisameJumpAud.restart();
+    }
+
     me.playerForAnimation.body.velocity.y = -1150;
 
     me.playerForAnimation.animations.play('jump');
@@ -311,7 +349,6 @@ function configureEnemy(enemy)
     enemy.enableBody = true;
     enemy.fighting = false;
 
-
     enemy.body.onCollide = new Phaser.Signal();
     enemy.body.onCollide.add(animateFighting, this);
 
@@ -328,8 +365,25 @@ function configureEnemy(enemy)
 
     enemy.outOfBoundsKill = true;
 
+    populateWithSound(enemy);
+
     enemyLogic(enemy);
 }
+
+function populateWithSound(enemy)
+{
+    if(itIs("narutoSprite", enemy))
+    {
+        enemy.runAud = me.game.add.audio('narutoRun');
+    }
+    else
+    {
+        enemy.runAud = me.game.add.audio('kabutoRun');
+    }
+
+    console.log(enemy.runAud);
+}
+
 
 function animateFighting(enemy, player)
 {
@@ -367,10 +421,26 @@ function enemyLogic(enemy)
 
 function runRight(enemy)
 {
+    playRunEnemy(enemy);
+
     enemy.scale.setTo(1, 1);
     enemy.body.velocity.x = enemySpeed;
     enemy.animations.play('run');
     me.game.time.events.add(Phaser.Timer.SECOND * 5, function(){if(!enemy.fighting)beIdleEnemy(enemy);}, this);
+}
+
+function  playRunEnemy(enemy)
+{
+    if(!enemy.runAud.isPlaying)
+    {
+        stopAllSoundsEnemy(enemy);
+        enemy.runAud.restart();
+    }
+}
+
+function stopAllSoundsEnemy(enemy)
+{
+    enemy.runAud.pause();
 }
 
 function beIdleEnemy(enemy)
@@ -382,6 +452,7 @@ function beIdleEnemy(enemy)
 
 function runLeft(enemy)
 {
+    playRunEnemy(enemy);
     enemy.scale.setTo(-1, 1);
     enemy.body.velocity.x = -enemySpeed;
     enemy.animations.play('run');
@@ -444,8 +515,21 @@ function checkForPlayerAttack(enemy)
     }
 }
 
+function addAudio()
+{
+    kisameAttackAud = me.game.add.audio('kisameAttack');
+    kisameAttackMagicAud = me.game.add.audio('kisameAttackMagic');
+    kisameJumpAud = me.game.add.audio('kisameJump');
+    kisameRunAud = me.game.add.audio('kisameRun');
+}
 
-
+function stopAllSounds()
+{
+    kisameAttackAud.pause();
+    kisameAttackMagicAud.pause();
+    kisameJumpAud.pause();
+    kisameRunAud.pause();
+}
 
 
 

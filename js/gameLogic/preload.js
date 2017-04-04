@@ -17,6 +17,16 @@ Preload.prototype = {
         for(var i = 0; i <= 117; i++)
         {this.game.load.image(i + "", "assets/images/game/" + i + ".jpg");}
 
+
+        this.game.load.audio('kisameAttack', 'assets/audio/kisame/kisameAttack.wav');
+        this.game.load.audio('kisameAttackMagic', 'assets/audio/kisame/kisameAttackMagic.mp3');
+        this.game.load.audio('kisameJump', 'assets/audio/kisame/kisameJump.wav');
+        this.game.load.audio('kisameRun', 'assets/audio/kisame/kisameRun.wav');
+
+        this.game.load.audio('narutoRun', 'assets/audio/naruto/narutoRun.wav');
+
+        this.game.load.audio('kabutoRun', 'assets/audio/kabuto/kabutoRun.wav');
+
     },
 
 	create: function(){
