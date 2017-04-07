@@ -15,7 +15,6 @@ var velocityOfTileMoving = 10,
     lastNumberOfPicture = 117,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud;
 
-
 Main.prototype = {
 
 	create: function()
@@ -111,7 +110,8 @@ Main.prototype = {
 	gameOver: function()
     {
         stopAllSounds();
-        this.game.state.start('Main');
+        saveRecord();
+        this.game.state.start('GameTitle');
 	},
 
 	addTile: function(x, y)
@@ -155,8 +155,12 @@ Main.prototype = {
 	        }
 	    }
 
-	    var enemy = me.enemies.create(me.game.world.width/2, y, getRandomEnemy(), 'stance/0.png');
-	    configureEnemy(enemy);
+	    var numberOfEnemies = getRandomInt(1, 5);
+	    for(var i = 0; i < numberOfEnemies; i++)
+        {
+            var enemy = me.enemies.create(me.game.world.width/2, y, getRandomEnemy(), 'stance/0.png');
+            configureEnemy(enemy);
+        }
 	},
 
 	initPlatforms: function()
@@ -207,7 +211,6 @@ Main.prototype = {
     {
 		me.score += 1;
 		me.scoreLabel.text = me.score; 		
-
 	},
 };
 
@@ -270,10 +273,10 @@ function jumpHasToOccur()
 
 function somethingWasPressed(keyCode)
 {
-    if(keyEqualTo(keyCode, "a"))
+    if(keyEqualTo(keyCode, "a") || keyEqualTo(keyCode, "ф"))
     {animateAttack();}
 
-    if(keyEqualTo(keyCode, "m"))
+    if(keyEqualTo(keyCode, "m") || keyEqualTo(keyCode, "ь"))
     {animateAttackMagic();}
 }
 
@@ -380,8 +383,6 @@ function populateWithSound(enemy)
     {
         enemy.runAud = me.game.add.audio('kabutoRun');
     }
-
-    console.log(enemy.runAud);
 }
 
 
@@ -413,10 +414,18 @@ function itIs(name, sprite)
 function enemyLogic(enemy)
 {
     enemy.figting = false;
-    if(getRandomInt(0, 1) == 0)
+
+    var whatEnemyShouldDo = getRandomInt(0, 3);
+
+    if(whatEnemyShouldDo == 0)
     {runRight(enemy);}
-    else
+    else if(whatEnemyShouldDo == 1)
     {runLeft(enemy);}
+    else if(whatEnemyShouldDo == 2)
+    {jumpLeft(enemy);}
+    else
+    {jumpRight(enemy);}
+
 }
 
 function runRight(enemy)
@@ -530,6 +539,24 @@ function stopAllSounds()
     kisameJumpAud.pause();
     kisameRunAud.pause();
 }
+
+function saveRecord()
+{
+    console.log("Cookies doesn`t work at all!!!");
+   // var key = "kisameUpAchievements",
+   // arrOfAchievements = Cookies.get(key);
+   // if(!arrOfAchievements)
+   // {arrOfAchievements = [];}
+   //
+   // arrOfAchievements.push(me.score);
+   //
+   // arrOfAchievements = Quicksort.sort(arrOfAchievements);
+   //
+   // console.log(arrOfAchievements);
+   //
+   // Cookies.set(key, arrOfAchievements);
+}
+
 
 
 

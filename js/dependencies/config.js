@@ -6,6 +6,9 @@ requirejs.config({
         preload: "gameLogic/preload",
         gametitle: "gameLogic/gametitle",
         main: "gameLogic/main",
-        gameover: "gameLogic/gameover"
+        gameover: "gameLogic/gameover",
+        achievements: "gameLogic/achievements",
+        videocontrol: "sideJS/videoControl",
+        quicksort: "dependencies/quicksort"
     }
 });

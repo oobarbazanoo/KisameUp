@@ -1,7 +1,9 @@
 requirejs(["config"], function()
 {
-    requirejs(["phaser"], function()
-    {requirejs(["boot", "preload", "gametitle", "main", "gameover"], afterEverythingWasLoaded);});
+    requirejs(["phaser", "quicksort"], function()
+    {
+        requirejs(["boot", "preload", "gametitle", "main", "gameover", "achievements", "videocontrol"], afterEverythingWasLoaded);
+    });
 });
 
 function afterEverythingWasLoaded()
@@ -12,6 +14,7 @@ function afterEverythingWasLoaded()
         game.state.add("Boot", Boot);
         game.state.add("Preload", Preload);
         game.state.add("GameTitle", GameTitle);
+        game.state.add("Achievements", Achievements);
         game.state.add("Main", Main);
         game.state.add("GameOver", GameOver);
 

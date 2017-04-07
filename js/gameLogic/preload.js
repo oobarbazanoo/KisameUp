@@ -14,6 +14,13 @@ Preload.prototype = {
         this.game.load.image('tile4', 'assets/tiles/4.png');
         this.game.load.image('tile5', 'assets/tiles/5.png');
 
+
+        this.game.load.image('gameMenuBack', 'assets/images/gameMenu/gameBack.png');
+        this.game.load.spritesheet('buttonNewGameSprite', 'assets/sprites/buttons/buttonNewGameSprite.png', 166, 40);
+        this.game.load.spritesheet('buttonAchievementsSprite', 'assets/sprites/buttons/buttonAchievementsSprite.png', 201, 40);
+        this.game.load.spritesheet('buttonBackSprite', 'assets/sprites/buttons/buttonBackSprite.png', 97, 40);
+
+
         for(var i = 0; i <= 117; i++)
         {this.game.load.image(i + "", "assets/images/game/" + i + ".jpg");}
 
@@ -30,6 +37,6 @@ Preload.prototype = {
     },
 
 	create: function(){
-		this.game.state.start("Main");
+		this.game.state.start("GameTitle");
 	}
 };
