@@ -497,7 +497,7 @@ function jumpRight(enemy)
 
 function getRandomTileStyle()
 {
-    var number = getRandomInt(0, 5);
+    var number = getRandomInt(0, 8);
     return "tile" + number;
 }
 

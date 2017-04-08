@@ -7,19 +7,16 @@ Preload.prototype = {
         this.game.load.atlasJSONHash('kisameSprite', 'assets/sprites/kisameSpriteSheet/kisameSpriteSheet.png', 'assets/sprites/kisameSpriteSheet/kisameSpriteSheet.json');
         this.game.load.atlasJSONHash('kabutoSprite', 'assets/sprites/kabutoSpriteSheet/kabutoSpriteSheet.png', 'assets/sprites/kabutoSpriteSheet/kabutoSpriteSheet.json');
         this.game.load.atlasJSONHash('narutoSprite', 'assets/sprites/narutoSpriteSheet/narutoSpriteSheet.png', 'assets/sprites/narutoSpriteSheet/narutoSpriteSheet.json');
-        this.game.load.image('tile0', 'assets/tiles/0.png');
-        this.game.load.image('tile1', 'assets/tiles/1.png');
-        this.game.load.image('tile2', 'assets/tiles/2.png');
-        this.game.load.image('tile3', 'assets/tiles/3.png');
-        this.game.load.image('tile4', 'assets/tiles/4.png');
-        this.game.load.image('tile5', 'assets/tiles/5.png');
+
+        for(var i = 0; i <= 8; i++)
+        {this.game.load.image('tile' + i, "assets/tiles/" + i + ".png");}
 
 
         this.game.load.image('gameMenuBack', 'assets/images/gameMenu/gameBack.png');
         this.game.load.spritesheet('buttonNewGameSprite', 'assets/sprites/buttons/buttonNewGameSprite.png', 166, 40);
         this.game.load.spritesheet('buttonAchievementsSprite', 'assets/sprites/buttons/buttonAchievementsSprite.png', 201, 40);
         this.game.load.spritesheet('buttonBackSprite', 'assets/sprites/buttons/buttonBackSprite.png', 97, 40);
-
+        this.game.load.spritesheet('buttonResettingAchievementsSprite', 'assets/sprites/buttons/buttonResettingAchievementsSprite.png', 267, 40);
 
         for(var i = 0; i <= 117; i++)
         {this.game.load.image(i + "", "assets/images/game/" + i + ".jpg");}
@@ -33,6 +30,9 @@ Preload.prototype = {
         this.game.load.audio('narutoRun', 'assets/audio/naruto/narutoRun.wav');
 
         this.game.load.audio('kabutoRun', 'assets/audio/kabuto/kabutoRun.wav');
+
+        this.game.load.audio('buttonClickSound', 'assets/audio/buttonClickSounds/menuButtonClick.wav');
+        this.game.load.audio('hoverButtonSound', 'assets/audio/buttonClickSounds/hoverButtonSound.wav');
 
     },
 
