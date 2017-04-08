@@ -13,7 +13,8 @@ var velocityOfTileMoving = 10,
     background,
     enemySpeed = 50,
     lastNumberOfPicture = 117,
-    kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud;
+    kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
+    basil = new Basil();
 
 Main.prototype = {
 
@@ -312,7 +313,7 @@ function animateAttackMagic()
 
 function animating()
 {
-    var animating = (facing == "attack")||(facing == "attackMagic");
+    var animating = (facing == "attack")||(facing == "attackMagic") || (facing == "jump");
     return animating;
 }
 
@@ -327,9 +328,15 @@ function animateJump()
 
     me.playerForAnimation.body.velocity.y = -1150;
 
-    me.playerForAnimation.animations.play('jump');
+    me.playerForAnimation.animations.play('jump', 1, false, false);
 
-    me.game.time.events.add(Phaser.Timer.SECOND * 1.450, function(){me.playerForAnimation.animations.play('idle');}, this);
+    facing = "jump";
+
+    me.game.time.events.add(Phaser.Timer.SECOND * 1.450, function()
+    {
+        // me.playerForAnimation.animations.play('idle');
+        facing = "idle";
+    }, this);
 
     jumpTimer = me.game.time.now + 750;
 }
@@ -542,19 +549,22 @@ function stopAllSounds()
 
 function saveRecord()
 {
-    console.log("Cookies doesn`t work at all!!!");
-   // var key = "kisameUpAchievements",
-   // arrOfAchievements = Cookies.get(key);
-   // if(!arrOfAchievements)
-   // {arrOfAchievements = [];}
-   //
-   // arrOfAchievements.push(me.score);
-   //
-   // arrOfAchievements = Quicksort.sort(arrOfAchievements);
-   //
-   // console.log(arrOfAchievements);
-   //
-   // Cookies.set(key, arrOfAchievements);
+   var key = "kisameUpAchievements",
+   arrOfAchievements = basil.get(key);
+   if(!arrOfAchievements)
+   {arrOfAchievements = [];}
+
+   arrOfAchievements.push(me.score);
+
+    function sortNumber(a,b)
+    {return a - b;}
+
+   arrOfAchievements.sort(sortNumber);
+
+   if(arrOfAchievements.lenght > 10)
+   {arrOfAchievements.shift();}
+
+   basil.set(key, arrOfAchievements);
 }
 
 

@@ -50,7 +50,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-!function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&false)define(e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.p2=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+!function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&false)define(e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.p2=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requirre=="function"&&requirre;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof requirre=="function"&&requirre;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_, module, exports){
 var Scalar = _dereq_('./Scalar');
 
 module.exports = Line;
@@ -14096,7 +14096,7 @@ PIXI.DisplayObject.prototype = {
     },
 
     /**
-    * To be overridden by classes that require it.
+    * To be overridden by classes that requirre it.
     *
     * @method PIXI.DisplayObject#preUpdate
     */
@@ -16054,7 +16054,7 @@ PIXI.PixiShader.prototype.initUniforms = function()
         }
         else if (type === 'mat2' || type === 'mat3' || type === 'mat4')
         {
-            //  These require special handling
+            //  These requirre special handling
             uniform.glMatrix = true;
             uniform.glValueLength = 1;
 
@@ -27827,7 +27827,7 @@ Phaser.State.prototype = {
 
     /**
     * preload is called first. Normally you'd use this to load your game assets (or those needed for the current State)
-    * You shouldn't create any objects in this method that require assets that you're also loading in this method, as
+    * You shouldn't create any objects in this method that requirre assets that you're also loading in this method, as
     * they won't yet be available.
     *
     * @method Phaser.State#preload
@@ -36417,7 +36417,7 @@ Phaser.Mouse = function (game) {
     /**
     * This property was removed in Phaser 2.4 and should no longer be used.
     * Instead please see the Pointer button properties such as `Pointer.leftButton`, `Pointer.rightButton` and so on.
-    * Or Pointer.button holds the DOM event button value if you require that.
+    * Or Pointer.button holds the DOM event button value if you requirre that.
     * @property {number} button
     * @default
     */
@@ -37129,7 +37129,7 @@ Phaser.MSPointer = function (game) {
     /**
     * This property was removed in Phaser 2.4 and should no longer be used.
     * Instead please see the Pointer button properties such as `Pointer.leftButton`, `Pointer.rightButton` and so on.
-    * Or Pointer.button holds the DOM event button value if you require that.
+    * Or Pointer.button holds the DOM event button value if you requirre that.
     * @property {number} button
     */
     this.button = -1;
@@ -46088,7 +46088,7 @@ Phaser.Component.LoadTexture = function () {};
 Phaser.Component.LoadTexture.prototype = {
 
     /**
-    * @property {boolean} customRender - Does this texture require a custom render call? (as set by BitmapData, Video, etc)
+    * @property {boolean} customRender - Does this texture requirre a custom render call? (as set by BitmapData, Video, etc)
     * @private
     */
     customRender: false,
@@ -57608,7 +57608,7 @@ Phaser.Text.fontPropertiesContext = Phaser.Text.fontPropertiesCanvas.getContext(
 *
 * To create multi-line text insert \r, \n or \r\n escape codes into the text string.
 *
-* If you are having performance issues due to the volume of sprites being rendered, and do not require the text to be constantly
+* If you are having performance issues due to the volume of sprites being rendered, and do not requirre the text to be constantly
 * updating, you can use BitmapText.generateTexture to create a static texture from this BitmapText.
 *
 * To create a BitmapText data files you can use:
@@ -61699,7 +61699,7 @@ Phaser.Device._initialize = function () {
             device.cordova = true;
         }
         
-        if (typeof process !== 'undefined' && typeof require !== 'undefined')
+        if (typeof process !== 'undefined' && typeof requirre !== 'undefined')
         {
             device.node = true;
         }
@@ -68082,7 +68082,7 @@ Phaser.Timer.prototype = {
     * The event will fire after the given amount of `delay` in milliseconds has passed, once the Timer has started running.
     * The delay is in relation to when the Timer starts, not the time it was added. If the Timer is already running the delay will be calculated based on the timers current time.
     *
-    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you require for this Timer.
+    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you requirre for this Timer.
     *
     * @method Phaser.Timer#add
     * @param {integer} delay - The number of milliseconds, in {@link Phaser.Time game time}, before the timer event occurs.
@@ -68104,7 +68104,7 @@ Phaser.Timer.prototype = {
     * The delay is in relation to when the Timer starts, not the time it was added.
     * If the Timer is already running the delay will be calculated based on the timers current time.
     *
-    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you require for this Timer.
+    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you requirre for this Timer.
     *
     * @method Phaser.Timer#repeat
     * @param {integer} delay - The number of milliseconds, in {@link Phaser.Time game time}, before the timer event occurs.
@@ -68126,7 +68126,7 @@ Phaser.Timer.prototype = {
     * The event will fire after the given amount of `delay` in milliseconds has passed, once the Timer has started running.
     * The delay is in relation to when the Timer starts, not the time it was added. If the Timer is already running the delay will be calculated based on the timers current time.
     *
-    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you require for this Timer.
+    * Make sure to call {@link Phaser.Timer#start start} after adding all of the Events you requirre for this Timer.
     *
     * @method Phaser.Timer#loop
     * @param {integer} delay - The number of milliseconds, in {@link Phaser.Time game time}, before the timer event occurs.
@@ -68946,7 +68946,7 @@ Phaser.AnimationManager.prototype = {
     * If you need to reset an already running animation do so directly on the Animation object itself.
     * 
     * If you need to jump to a specific frame of this animation, then call `play` and immediately after it,
-    * set the frame you require (i.e. `animation.play(); animation.frame = 4`).
+    * set the frame you requirre (i.e. `animation.play(); animation.frame = 4`).
     *
     * @method Phaser.AnimationManager#play
     * @param {string} name - The name of the animation to be played, e.g. "fire", "walk", "jump".
@@ -69426,7 +69426,7 @@ Phaser.Animation.prototype = {
     * Plays this animation.
     * 
     * If you need to jump to a specific frame of this animation, then call `play` and immediately after it,
-    * set the frame you require (i.e. `animation.play(); animation.frame = 4`).
+    * set the frame you requirre (i.e. `animation.play(); animation.frame = 4`).
     *
     * @method Phaser.Animation#play
     * @param {number} [frameRate=null] - The framerate to play the animation at. The speed is given in frames per second. If not provided the previously set frameRate of the Animation is used.
@@ -71041,7 +71041,7 @@ Phaser.AnimationParser = {
 * object in the cache will also be updated, even if you don't put it back into the cache again.
 *
 * By default when you change State the cache is _not_ cleared, although there is an option to clear it should
-* your game require it. In a typical game set-up the cache is populated once after the main game has loaded and
+* your game requirre it. In a typical game set-up the cache is populated once after the main game has loaded and
 * then used as an asset store.
 *
 * @class Phaser.Cache
@@ -72144,7 +72144,7 @@ Phaser.Cache.prototype = {
     * @param {string} key - The key of the asset within the cache.
     * @param {integer} cache - The cache to search. One of the Cache consts such as `Phaser.Cache.IMAGE` or `Phaser.Cache.SOUND`.
     * @param {string} [method] - The string name of the method calling getItem. Can be empty, in which case no console warning is output.
-    * @param {string} [property] - If you require a specific property from the cache item, specify it here.
+    * @param {string} [property] - If you requirre a specific property from the cache item, specify it here.
     * @return {object} The cached item if found, otherwise `null`. If the key is invalid and `method` is set then a console.warn is output.
     */
     getItem: function (key, cache, method, property) {
@@ -73200,7 +73200,7 @@ Phaser.Loader = function (game) {
 
     /**
     * Used to map the application mime-types to to the Accept header in XHR requests.
-    * If you don't require these mappings, or they cause problems on your server, then
+    * If you don't requirre these mappings, or they cause problems on your server, then
     * remove them from the headers object and the XHR request will not try to use them.
     *
     * This object can also be used to set the `X-Requested-With` header to 
@@ -73725,7 +73725,7 @@ Phaser.Loader.prototype = {
     * @param {string} key - Unique asset key of this resource pack.
     * @param {string} [url] - URL of the Asset Pack JSON file. If you wish to pass a json object instead set this to null and pass the object as the data parameter.
     * @param {object} [data] - The Asset Pack JSON data. Use this to pass in a json data object rather than loading it from a URL. TODO
-    * @param {object} [callbackContext=(loader)] - Some Loader operations, like Binary and Script require a context for their callbacks. Pass the context here.
+    * @param {object} [callbackContext=(loader)] - Some Loader operations, like Binary and Script requirre a context for their callbacks. Pass the context here.
     * @return {Phaser.Loader} This Loader instance.
     */
     pack: function (key, url, data, callbackContext) {
@@ -73806,7 +73806,7 @@ Phaser.Loader.prototype = {
     * This method also supports passing in a texture object as the `url` argument. This allows you to load
     * compressed textures into Phaser. You can also use `Loader.texture` to do this.
     * 
-    * Compressed Textures are a WebGL only feature, and require 3rd party tools to create.
+    * Compressed Textures are a WebGL only feature, and requirre 3rd party tools to create.
     * Available tools include Texture Packer, PVRTexTool, DirectX Texture Tool and Mali Texture Compression Tool.
     *
     * Supported texture compression formats are: PVRTC, S3TC and ETC1.
@@ -73851,7 +73851,7 @@ Phaser.Loader.prototype = {
     /**
     * Adds a Compressed Texture Image to the current load queue.
     *
-    * Compressed Textures are a WebGL only feature, and require 3rd party tools to create.
+    * Compressed Textures are a WebGL only feature, and requirre 3rd party tools to create.
     * Available tools include Texture Packer, PVRTexTool, DirectX Texture Tool and Mali Texture Compression Tool.
     *
     * Supported texture compression formats are: PVRTC, S3TC and ETC1.
@@ -85715,7 +85715,7 @@ Phaser.Physics.prototype = {
     * Phaser.Physics.NINJA - A port of Metanet Softwares N+ physics system.
     * Phaser.Physics.BOX2D - A commercial Phaser Plugin (see http://phaser.io)
     *
-    * Both Ninja Physics and Box2D require their respective plugins to be loaded before you can start them.
+    * Both Ninja Physics and Box2D requirre their respective plugins to be loaded before you can start them.
     * They are not bundled into the core Phaser library.
     *
     * If the physics world has already been created (i.e. in another state in your game) then 
@@ -85783,7 +85783,7 @@ Phaser.Physics.prototype = {
     * Phaser.Physics.MATTER - A full-body and light-weight advanced physics system (still in development)
     * Phaser.Physics.CHIPMUNK is still in development.
     *
-    * If you require more control over what type of body is created, for example to create a Ninja Physics Circle instead of the default AABB, then see the
+    * If you requirre more control over what type of body is created, for example to create a Ninja Physics Circle instead of the default AABB, then see the
     * individual physics systems `enable` methods instead of using this generic one.
     *
     * @method Phaser.Physics#enable
@@ -86374,7 +86374,7 @@ Phaser.Physics.Arcade.prototype = {
     * Checks for collision between two game objects. You can perform Sprite vs. Sprite, Sprite vs. Group, Group vs. Group, Sprite vs. Tilemap Layer or Group vs. Tilemap Layer collisions.
     * Both the first and second parameter can be arrays of objects, of differing types.
     * If two arrays are passed, the contents of the first parameter will be tested against all contents of the 2nd parameter.
-    * The objects are also automatically separated. If you don't require separation then use ArcadePhysics.overlap instead.
+    * The objects are also automatically separated. If you don't requirre separation then use ArcadePhysics.overlap instead.
     * An optional processCallback can be provided. If given this function will be called when two sprites are found to be colliding. It is called before any separation takes place,
     * giving you the chance to perform additional checks. If the function returns true then the collision and separation is carried out. If it returns false it is skipped.
     * The collideCallback is an optional function that is only called if two sprites collide. If a processCallback has been set then it needs to return true for collideCallback to be called.

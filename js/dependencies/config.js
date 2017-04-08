@@ -9,6 +9,8 @@ requirejs.config({
         gameover: "gameLogic/gameover",
         achievements: "gameLogic/achievements",
         videocontrol: "sideJS/videoControl",
-        quicksort: "dependencies/quicksort"
+        quicksort: "dependencies/quicksort",
+        storage: "dependencies/storage",
+        basil: "dependencies/basil"
     }
 });

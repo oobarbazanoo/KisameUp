@@ -1,6 +1,6 @@
 requirejs(["config"], function()
 {
-    requirejs(["phaser", "quicksort"], function()
+    requirejs(["phaser", "quicksort", "basil"], function()
     {
         requirejs(["boot", "preload", "gametitle", "main", "gameover", "achievements", "videocontrol"], afterEverythingWasLoaded);
     });
