@@ -8,15 +8,28 @@ requirejs(["config"], function()
 
 function afterEverythingWasLoaded()
 {
-        var gameWindow = document.getElementById("gameWindow");
-        game = new Phaser.Game(1000, 500, Phaser.AUTO, gameWindow);
+    game = initialiseGame();
+    setStatesFor(game);
+    startThe(game);
+}
 
-        game.state.add("Boot", Boot);
-        game.state.add("Preload", Preload);
-        game.state.add("GameTitle", GameTitle);
-        game.state.add("Achievements", Achievements);
-        game.state.add("Main", Main);
-        game.state.add("GameOver", GameOver);
+function initialiseGame()
+{
+    var gameWindow = document.getElementById("gameWindow");
+    return new Phaser.Game(1000, 500, Phaser.AUTO, gameWindow);
+}
 
-        game.state.start("Boot");
+function setStatesFor(game)
+{
+    game.state.add("Boot", Boot);
+    game.state.add("Preload", Preload);
+    game.state.add("GameTitle", GameTitle);
+    game.state.add("Achievements", Achievements);
+    game.state.add("Main", Main);
+    game.state.add("GameOver", GameOver);
+}
+
+function startThe(game)
+{
+    game.state.start("Boot");
 }

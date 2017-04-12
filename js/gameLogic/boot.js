@@ -1,13 +1,8 @@
-var Boot = function(game){
-
-};
+var Boot = function(game)
+{};
   
-Boot.prototype = {
-
-	preload: function(){
-
-	},
-	
+Boot.prototype =
+{
   	create: function(){
 		this.scale.scaleMode = Phaser.ScaleManager.NO_SCALE;
 		this.game.state.start("Preload");

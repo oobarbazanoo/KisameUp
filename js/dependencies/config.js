@@ -1,6 +1,9 @@
-requirejs.config({
+requirejs.config(
+{
     baseUrl: "js",
-    paths:{
+
+    paths:
+    {
         phaser: "dependencies/phaser",
         boot: "gameLogic/boot",
         preload: "gameLogic/preload",

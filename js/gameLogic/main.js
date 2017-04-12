@@ -14,7 +14,8 @@ var velocityOfTileMoving = 10,
     enemySpeed = 50,
     lastNumberOfPicture = 117,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
-    basil = new Basil();
+    basil = new Basil(),
+    maxNumberOfEnemies = 5;
 
 Main.prototype = {
 
@@ -50,11 +51,11 @@ Main.prototype = {
         me.enemies = me.game.add.group();
         me.enemies.enableBody = true;
 
+		//Add the player to the screen
+		me.createPlayer();
 		//Create the inital on screen platforms
 		me.initPlatforms();
 
-		//Add the player to the screen
-		me.createPlayer();
 
 		//Create the score label
 		me.createScore();
@@ -64,12 +65,23 @@ Main.prototype = {
 
         game.time.events.loop(Phaser.Timer.SECOND * 40, me.changePicture, me);
 
+        game.time.events.loop(Phaser.Timer.SECOND * 50, me.incrementLevelDifficulty, me);
+
 	    //Enable cursor keys so we can create some controls
 	    me.cursors = me.game.input.keyboard.createCursorKeys();
 
 
 	    addAudio();
+
+        me.game.input.keyboard.onDownCallback = somethingWasPressed;
 	},
+
+    incrementLevelDifficulty: function()
+    {
+        maxNumberOfEnemies++;
+        velocityOfTileMoving *= 0.9;
+        speedOfTileGenerating *= 0.9;
+    },
 
     changePicture: function()
     {
@@ -77,25 +89,18 @@ Main.prototype = {
         background.loadTexture(numberOfThePicture + "");
     },
 
-
 	update: function()
     {
         background.tilePosition.y += 1;
 
-		//Make the sprite collide with the ground layer
 		me.game.physics.arcade.collide(me.player, me.platforms);
-
         me.game.physics.arcade.collide(me.enemies, me.platforms);
-
         me.game.physics.arcade.collide(me.enemies, me.player);
 
-        me.enemies.children.forEach(checkForPlayerAttack, this);
+        me.enemies.children.forEach(playerAttacksBottomIsTouching, this);
 
-        //Check if the player is touching the bottom
-        if(me.playerForAnimation.body.position.y >= me.game.world.height - me.playerForAnimation.body.height)
+        if(touchesTheBottom(me.playerForAnimation))
         {me.gameOver();}
-
-        me.game.input.keyboard.onDownCallback = somethingWasPressed;
 
         if(me.cursors.left.isDown)
         {animateRunLeft();}
@@ -106,6 +111,12 @@ Main.prototype = {
 
         if(jumpHasToOccur())
         {animateJump();}
+
+        me.enemies.children.forEach(function(enemy)
+        {
+            if(enemy.notFight)
+            {enemyLogic(enemy);}
+        });
 	},
 
 	gameOver: function()
@@ -156,7 +167,7 @@ Main.prototype = {
 	        }
 	    }
 
-	    var numberOfEnemies = getRandomInt(1, 5);
+	    var numberOfEnemies = getRandomInt(1, maxNumberOfEnemies);
 	    for(var i = 0; i < numberOfEnemies; i++)
         {
             var enemy = me.enemies.create(me.game.world.width/2, y, getRandomEnemy(), 'stance/0.png');
@@ -279,6 +290,11 @@ function somethingWasPressed(keyCode)
 
     if(keyEqualTo(keyCode, "m") || keyEqualTo(keyCode, "ь"))
     {animateAttackMagic();}
+
+    if(keyEqualTo(keyCode, "t"))
+    {
+       console.log(me.enemies.children);
+    }
 }
 
 function keyEqualTo(keyCode, key)
@@ -357,10 +373,8 @@ function getRandomEnemy()
 function configureEnemy(enemy)
 {
     enemy.enableBody = true;
-    enemy.fighting = false;
-
-    enemy.body.onCollide = new Phaser.Signal();
-    enemy.body.onCollide.add(animateFighting, this);
+    enemy.notFight = true;
+    enemy.jumping = false;
 
     enemy.body.collideWorldBounds = true;
 
@@ -392,18 +406,6 @@ function populateWithSound(enemy)
     }
 }
 
-
-function animateFighting(enemy, player)
-{
-    if(itIs("kisameSprite", player))
-    {
-        enemy.fighting = true;
-        enemy.body.velocity.x = 0;
-        enemy.animations.play(getRandomAttack, 10, false, false);
-        enemy.animations.currentAnim.onComplete.add(enemyLogic,this);
-    }
-}
-
 function getRandomAttack()
 {
     if(getRandomInt(0, 1) == 0)
@@ -420,19 +422,46 @@ function itIs(name, sprite)
 
 function enemyLogic(enemy)
 {
-    enemy.figting = false;
+    if(!enemy.notFight || enemy.jumping)
+    {return;}
 
-    var whatEnemyShouldDo = getRandomInt(0, 3);
-
-    if(whatEnemyShouldDo == 0)
-    {runRight(enemy);}
-    else if(whatEnemyShouldDo == 1)
-    {runLeft(enemy);}
-    else if(whatEnemyShouldDo == 2)
-    {jumpLeft(enemy);}
+    var difBetweenEnemyAndPlayer = enemy.x - me.playerForAnimation.x;
+    if(Math.abs(difBetweenEnemyAndPlayer) > 5)
+    {
+        if(difBetweenEnemyAndPlayer < 0)
+        {runRightUntilMeetPlayer(enemy);}
+        else if(difBetweenEnemyAndPlayer > 0)
+        {runLeftUntilMeetPlayer(enemy);}
+    }
     else
-    {jumpRight(enemy);}
+    {
+        jumpEnemy(enemy);
+    }
+}
 
+function jumpEnemy(enemy)
+{
+    enemy.scale.setTo(-1, 1);
+    enemy.body.velocity.x = -enemySpeed;
+    enemy.body.velocity.y = -1000;
+    enemy.animations.play('jump', 10, false, false);
+
+    me.game.time.events.add(Phaser.Timer.SECOND * 2, function(){enemy.body.velocity.y = 0; enemy.animations.play('idle');}, this);
+    me.game.time.events.add(Phaser.Timer.SECOND * 5, function(){enemy.jumping = false;}, this);
+}
+
+function runRightUntilMeetPlayer(enemy)
+{
+    enemy.scale.setTo(1, 1);
+    enemy.body.velocity.x = enemySpeed;
+    enemy.animations.play('run', 10, false, false);
+}
+
+function runLeftUntilMeetPlayer(enemy)
+{
+    enemy.scale.setTo(-1, 1);
+    enemy.body.velocity.x = -enemySpeed;
+    enemy.animations.play('run', 10, false, false);
 }
 
 function runRight(enemy)
@@ -463,7 +492,7 @@ function beIdleEnemy(enemy)
 {
     enemy.body.velocity.x = 0;
     enemy.animations.play("idle", 5, true, false);
-    me.game.time.events.add(Phaser.Timer.SECOND * 5, function(){if(!enemy.fighting)runLeft(enemy);}, this);
+ //   me.game.time.events.add(Phaser.Timer.SECOND * 5, function(){if(!enemy.fighting)runLeft(enemy);}, this);
 }
 
 function runLeft(enemy)
@@ -501,13 +530,10 @@ function getRandomTileStyle()
     return "tile" + number;
 }
 
-function checkForPlayerAttack(enemy)
+function playerAttacksBottomIsTouching(enemy)
 {
-    if(enemy.body.position.y >= me.game.world.height - enemy.body.height)
-    {
-        enemy.kill();
-        me.enemies.remove(enemy);
-    }
+    if(touchesTheBottom(enemy))
+    {deleteEnemy(enemy);}
 
     if(enemy.overlap(me.playerForAnimation))
     {
@@ -517,19 +543,33 @@ function checkForPlayerAttack(enemy)
                 me.enemies.remove(enemy);
                 me.incrementScore();
         }
-        else if(!enemy.figting)
+        else if(enemy.notFight)
         {
-            enemy.figting = true;
+            enemy.notFight = false;
             enemy.animations.play(getRandomAttack());
             enemy.animations.currentAnim.onComplete.add(function()
             {
+                enemy.notFight = true;
                 if(enemy.overlap(me.playerForAnimation))
                 {me.gameOver();}
-                enemyLogic(enemy);
+                else
+                {enemyLogic(enemy);}
             },this);
         }
     }
 }
+
+function deleteEnemy(enemy)
+{
+    enemy.kill();
+    me.enemies.remove(enemy);
+}
+
+function touchesTheBottom(who)
+{
+    return who.body.position.y >= me.game.world.height - who.body.height;
+}
+
 
 function addAudio()
 {
