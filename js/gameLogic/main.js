@@ -23,6 +23,8 @@ Main.prototype = {
     {
 		me = this;
 
+		me.gameIsRunning = true;
+
         spaceBar = me.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
 		//The spacing for the initial platforms
@@ -97,8 +99,6 @@ Main.prototype = {
         me.game.physics.arcade.collide(me.enemies, me.platforms);
         me.game.physics.arcade.collide(me.enemies, me.player);
 
-        me.enemies.children.forEach(playerAttacksBottomIsTouching, this);
-
         if(touchesTheBottom(me.playerForAnimation))
         {me.gameOver();}
 
@@ -114,13 +114,15 @@ Main.prototype = {
 
         me.enemies.children.forEach(function(enemy)
         {
-            if(enemy.notFight)
+            playerAttacksBottomIsTouching(enemy);
+            if(enemy.notFight && !enemy.jumping && !enemy.idle)
             {enemyLogic(enemy);}
         });
 	},
 
 	gameOver: function()
     {
+        me.game.input.keyboard.onDownCallback = null;
         stopAllSounds();
         saveRecord();
         this.game.state.start('GameTitle');
@@ -170,7 +172,7 @@ Main.prototype = {
 	    var numberOfEnemies = getRandomInt(1, maxNumberOfEnemies);
 	    for(var i = 0; i < numberOfEnemies; i++)
         {
-            var enemy = me.enemies.create(me.game.world.width/2, y, getRandomEnemy(), 'stance/0.png');
+            var enemy = me.enemies.create(getRandomInt(5, parseInt(me.game.world.width - 10, 10)), y, getRandomEnemy(), 'stance/0.png');
             configureEnemy(enemy);
         }
 	},
@@ -293,7 +295,11 @@ function somethingWasPressed(keyCode)
 
     if(keyEqualTo(keyCode, "t"))
     {
-       console.log(me.enemies.children);
+        me.enemies.children.forEach(function(enemy)
+        {
+            var difBetweenEnemyAndPlayerVertical = enemy.y - me.playerForAnimation.y;
+            console.log(difBetweenEnemyAndPlayerVertical);
+        });
     }
 }
 
@@ -375,6 +381,7 @@ function configureEnemy(enemy)
     enemy.enableBody = true;
     enemy.notFight = true;
     enemy.jumping = false;
+    enemy.idle = false;
 
     enemy.body.collideWorldBounds = true;
 
@@ -422,25 +429,27 @@ function itIs(name, sprite)
 
 function enemyLogic(enemy)
 {
-    if(!enemy.notFight || enemy.jumping)
-    {return;}
-
-    var difBetweenEnemyAndPlayer = enemy.x - me.playerForAnimation.x;
-    if(Math.abs(difBetweenEnemyAndPlayer) > 5)
+    var difBetweenEnemyAndPlayerHorizontal = enemy.x - me.playerForAnimation.x;
+    if(Math.abs(difBetweenEnemyAndPlayerHorizontal) > 5)
     {
-        if(difBetweenEnemyAndPlayer < 0)
+        if(difBetweenEnemyAndPlayerHorizontal < 0)
         {runRightUntilMeetPlayer(enemy);}
-        else if(difBetweenEnemyAndPlayer > 0)
+        else if(difBetweenEnemyAndPlayerHorizontal > 0)
         {runLeftUntilMeetPlayer(enemy);}
     }
     else
     {
-        jumpEnemy(enemy);
+        var difBetweenEnemyAndPlayerVertical = enemy.y - me.playerForAnimation.y;
+        if(difBetweenEnemyAndPlayerVertical > 0)
+        {jumpEnemy(enemy);}
+        else
+        {beIdleEnemy(enemy);}
     }
 }
 
 function jumpEnemy(enemy)
 {
+    enemy.jumping = true;
     enemy.scale.setTo(-1, 1);
     enemy.body.velocity.x = -enemySpeed;
     enemy.body.velocity.y = -1000;
@@ -452,6 +461,7 @@ function jumpEnemy(enemy)
 
 function runRightUntilMeetPlayer(enemy)
 {
+    playRunSoundEnemy(enemy);
     enemy.scale.setTo(1, 1);
     enemy.body.velocity.x = enemySpeed;
     enemy.animations.play('run', 10, false, false);
@@ -459,9 +469,19 @@ function runRightUntilMeetPlayer(enemy)
 
 function runLeftUntilMeetPlayer(enemy)
 {
+    playRunSoundEnemy(enemy);
     enemy.scale.setTo(-1, 1);
     enemy.body.velocity.x = -enemySpeed;
     enemy.animations.play('run', 10, false, false);
+}
+
+function playRunSoundEnemy(enemy)
+{
+    if(!enemy.runAud.isPlaying)
+    {
+        stopAllSoundsEnemy(enemy);
+        enemy.runAud.restart();
+    }
 }
 
 function runRight(enemy)
@@ -490,9 +510,13 @@ function stopAllSoundsEnemy(enemy)
 
 function beIdleEnemy(enemy)
 {
+    enemy.idle = true;
     enemy.body.velocity.x = 0;
-    enemy.animations.play("idle", 5, true, false);
- //   me.game.time.events.add(Phaser.Timer.SECOND * 5, function(){if(!enemy.fighting)runLeft(enemy);}, this);
+    enemy.animations.play("idle", 5, false, false);
+    enemy.animations.currentAnim.onComplete.add(function()
+    {
+        enemy.idle = false;
+    },this);
 }
 
 function runLeft(enemy)
@@ -533,14 +557,16 @@ function getRandomTileStyle()
 function playerAttacksBottomIsTouching(enemy)
 {
     if(touchesTheBottom(enemy))
-    {deleteEnemy(enemy);}
+    {
+        deleteEnemy(enemy);
+        return;
+    }
 
     if(enemy.overlap(me.playerForAnimation))
     {
         if(facing == "attack" || facing == "attackMagic")
         {
-                enemy.kill();
-                me.enemies.remove(enemy);
+                deleteEnemy(enemy);
                 me.incrementScore();
         }
         else if(enemy.notFight)
@@ -552,8 +578,6 @@ function playerAttacksBottomIsTouching(enemy)
                 enemy.notFight = true;
                 if(enemy.overlap(me.playerForAnimation))
                 {me.gameOver();}
-                else
-                {enemyLogic(enemy);}
             },this);
         }
     }
