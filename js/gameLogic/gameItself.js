@@ -1,8 +1,8 @@
-var Main = function(game){
+var GameItself = function(game){
 
 };
 
-var velocityOfTileMoving = 10,
+var velocityOfTileMoving = 15,
     speedOfTileGenerating = 15000,
     speedOfPlayerMovingRightLeft = 150,
     facing = 'left',
@@ -14,10 +14,9 @@ var velocityOfTileMoving = 10,
     enemySpeed = 50,
     lastNumberOfPicture = 117,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
-    basil = new Basil(),
     maxNumberOfEnemies = 5;
 
-Main.prototype = {
+GameItself.prototype = {
 
 	create: function()
     {
@@ -125,7 +124,7 @@ Main.prototype = {
         me.game.input.keyboard.onDownCallback = null;
         stopAllSounds();
         saveRecord();
-        this.game.state.start('GameTitle');
+        this.game.state.start('MainMenu');
 	},
 
 	addTile: function(x, y)
@@ -287,10 +286,10 @@ function jumpHasToOccur()
 
 function somethingWasPressed(keyCode)
 {
-    if(keyEqualTo(keyCode, "a") || keyEqualTo(keyCode, "ф"))
+    if(keyEqualTo(keyCode, "a") || keyEqualTo(keyCode, "ф") || keyEqualTo(keyCode, "A") || keyEqualTo(keyCode, "Ф"))
     {animateAttack();}
 
-    if(keyEqualTo(keyCode, "m") || keyEqualTo(keyCode, "ь"))
+    if(keyEqualTo(keyCode, "m") || keyEqualTo(keyCode, "ь") || keyEqualTo(keyCode, "M") || keyEqualTo(keyCode, "Ь"))
     {animateAttackMagic();}
 
     if(keyEqualTo(keyCode, "t"))
@@ -629,7 +628,7 @@ function saveRecord()
    {arrOfAchievements.shift();}
 
    basil.set(key, arrOfAchievements);
-}
+};
 
 
 

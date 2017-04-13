@@ -1,8 +1,11 @@
+var filesToPreloadFirst = ["phaser", "basil"],
+    filesToPreloadSecond = ["boot", "preload", "mainMenu", "gameItself", "achievements", "settings", "videocontrol"];
+
 requirejs(["config"], function()
 {
-    requirejs(["phaser", "quicksort", "basil"], function()
+    requirejs(filesToPreloadFirst, function()
     {
-        requirejs(["boot", "preload", "gametitle", "main", "gameover", "achievements", "videocontrol"], afterEverythingWasLoaded);
+        requirejs(filesToPreloadSecond, afterEverythingWasLoaded);
     });
 });
 
@@ -23,10 +26,10 @@ function setStatesFor(game)
 {
     game.state.add("Boot", Boot);
     game.state.add("Preload", Preload);
-    game.state.add("GameTitle", GameTitle);
+    game.state.add("MainMenu", MainMenu);
     game.state.add("Achievements", Achievements);
-    game.state.add("Main", Main);
-    game.state.add("GameOver", GameOver);
+    game.state.add("Settings", Settings);
+    game.state.add("GameItself", GameItself);
 }
 
 function startThe(game)

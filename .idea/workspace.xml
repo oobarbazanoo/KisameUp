@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcab764c-28cc-4d47-a9d9-4e2abbd8957c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonOffSoundSprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonOnSoundSprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonSettingsSprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gameLogic/settings.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dependencies/quicksort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dependencies/storage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/gameLogic/gameover.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/audio/kisame/kisameAttackMagic.mp3" afterPath="$PROJECT_DIR$/assets/audio/kisame/kisameAttackMagic.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.less" afterPath="$PROJECT_DIR$/assets/css/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/main.js" afterPath="$PROJECT_DIR$/js/gameLogic/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/dependencies/config.js" afterPath="$PROJECT_DIR$/js/dependencies/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/achievements.js" afterPath="$PROJECT_DIR$/js/gameLogic/achievements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/boot.js" afterPath="$PROJECT_DIR$/js/gameLogic/boot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/preload.js" afterPath="$PROJECT_DIR$/js/gameLogic/preload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/gameLogic/gametitle.js" afterPath="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/gameLogic/main.js" afterPath="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,18 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/main.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="102">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -54,11 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tile</find>
-      <find>me.playerFo</find>
-      <find>me.playerForAnimation.wor</find>
-      <find>me.playerForAnimation.x</find>
-      <find>runRightU</find>
       <find>until</find>
       <find>attack</find>
       <find>enemy</find>
@@ -84,6 +78,11 @@
       <find>enemy.runAud</find>
       <find>loop</find>
       <find>stopAll</find>
+      <find>someth</find>
+      <find>hole</find>
+      <find>start</find>
+      <find>state.star</find>
+      <find>basil</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,16 +106,20 @@
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js" />
         <option value="$PROJECT_DIR$/js/dependencies/require.js" />
         <option value="$PROJECT_DIR$/js/dependencies/storage.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/achievements.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
-        <option value="$PROJECT_DIR$/js/dependencies/config.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/gametitle.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/boot.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/css/main.less" />
+        <option value="$PROJECT_DIR$/js/gameLogic/main.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/gametitle.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/gameover.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
+        <option value="$PROJECT_DIR$/js/dependencies/config.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/achievements.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/boot.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/settings.js" />
       </list>
     </option>
   </component>
@@ -159,6 +162,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,6 +186,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JumperKisame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JumperKisame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -199,18 +218,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="sprites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main.less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,17 +238,17 @@
     <property name="javascript.nodejs.core.library.configured.version" value="6.9.5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\sprites\buttons" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\kisame" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\tiles" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\buttonClickSounds" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\webSite" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\kisame" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\tiles" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\buttonClickSounds" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\sprites\buttons" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\game" />
     </key>
   </component>
   <component name="RunManager">
@@ -667,15 +680,16 @@
       <workItem from="1491746685167" duration="909000" />
       <workItem from="1491926314554" duration="2536000" />
       <workItem from="1491940663397" duration="2889000" />
-      <workItem from="1492024242240" duration="11836000" />
+      <workItem from="1492024242240" duration="12519000" />
+      <workItem from="1492104268785" duration="6387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76759000" />
+    <option name="totallyTimeSpent" value="83829000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -718,77 +732,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#2175#2287#0" expanded="false" />
-            <element signature="e#2324#2459#0" expanded="false" />
-            <element signature="e#3468#3835#0" expanded="false" />
-            <element signature="e#4907#5165#0" expanded="false" />
-            <element signature="n#!!block;n#beIdle#0" expanded="false" />
-            <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
-            <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#populateWithSound#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomAttack#0" expanded="false" />
-            <element signature="n#!!block;n#itIs#0" expanded="false" />
-            <element signature="n#!!block;n#jumpRight#0" expanded="false" />
-            <element signature="n#!!block;n#stopAllSounds#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2175#2287#0" expanded="false" />
-            <element signature="e#2324#2459#0" expanded="false" />
-            <element signature="e#3468#3835#0" expanded="false" />
-            <element signature="e#4907#5165#0" expanded="false" />
-            <element signature="n#!!block;n#beIdle#0" expanded="false" />
-            <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
-            <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#populateWithSound#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomAttack#0" expanded="false" />
-            <element signature="n#!!block;n#itIs#0" expanded="false" />
-            <element signature="n#!!block;n#jumpRight#0" expanded="false" />
-            <element signature="n#!!block;n#stopAllSounds#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -804,15 +752,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/main.js">
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6681">
           <caret line="393" column="46" lean-forward="false" selection-start-line="393" selection-start-column="46" selection-end-line="393" selection-end-column="46" />
           <folding>
-            <element signature="e#2175#2287#0" expanded="false" />
-            <element signature="e#2324#2459#0" expanded="false" />
-            <element signature="e#3468#3835#0" expanded="false" />
-            <element signature="e#4907#5165#0" expanded="false" />
+            <element signature="e#2162#2274#0" expanded="false" />
+            <element signature="e#2311#2446#0" expanded="false" />
             <element signature="n#!!block;n#beIdle#0" expanded="false" />
             <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
             <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
@@ -908,16 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonNewGameSprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonAchievementsSprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/cookies-js/dist/cookies.d.ts" />
     <entry file="file://$PROJECT_DIR$/js/main2.js" />
     <entry file="file://$PROJECT_DIR$/Gruntfile.js" />
@@ -952,13 +888,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/basil.js/test/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/dependencies/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/dependencies/quicksort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -973,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonBackSprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonResettingAchievementsSprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/audio/buttonClickSounds/hoverButtonSound.wav">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -990,59 +909,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/achievements.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        <state relative-caret-position="304">
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonResettingAchievementsSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonAchievementsSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonNewGameSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dependencies/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dependencies/phaserCheckBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dependencies/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/gametitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/boot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="238">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="321">
+          <caret line="34" column="110" lean-forward="false" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/main.js">
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="456" column="0" lean-forward="true" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
+        <state relative-caret-position="430">
+          <caret line="629" column="6" lean-forward="false" selection-start-line="629" selection-start-column="6" selection-end-line="629" selection-end-column="6" />
           <folding>
-            <element signature="e#2175#2287#0" expanded="false" />
-            <element signature="e#2324#2459#0" expanded="false" />
-            <element signature="e#3468#3835#0" expanded="false" />
-            <element signature="e#4907#5165#0" expanded="false" />
+            <element signature="e#2162#2274#0" expanded="false" />
+            <element signature="e#2311#2446#0" expanded="false" />
             <element signature="n#!!block;n#beIdle#0" expanded="false" />
             <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
             <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
@@ -1056,26 +1006,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/achievements.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        <state relative-caret-position="323">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.less">
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonBackSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonOnSoundSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/buttons/buttonOffSoundSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/mainMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="168">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/boot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding />
         </state>
       </provider>

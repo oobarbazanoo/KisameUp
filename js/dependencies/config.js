@@ -7,13 +7,11 @@ requirejs.config(
         phaser: "dependencies/phaser",
         boot: "gameLogic/boot",
         preload: "gameLogic/preload",
-        gametitle: "gameLogic/gametitle",
-        main: "gameLogic/main",
-        gameover: "gameLogic/gameover",
+        mainMenu: "gameLogic/mainMenu",
+        gameItself: "gameLogic/gameItself",
         achievements: "gameLogic/achievements",
+        settings: "gameLogic/settings",
         videocontrol: "sideJS/videoControl",
-        quicksort: "dependencies/quicksort",
-        storage: "dependencies/storage",
         basil: "dependencies/basil"
     }
 });

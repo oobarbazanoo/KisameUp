@@ -17,7 +17,7 @@ Achievements.prototype =
         resetAchievementsButton.onInputOver.add(this.buttonHovered, this);
 
 
-        var arrWithAchievements = (new Basil()).get("kisameUpAchievements");
+        var arrWithAchievements = basil.get("kisameUpAchievements");
         if(!arrWithAchievements)
         {arrWithAchievements = [];}
 
@@ -46,7 +46,7 @@ Achievements.prototype =
 
     goToMenu: function()
     {
-        this.game.state.start("GameTitle");
+        this.game.state.start("MainMenu");
     },
 
     backButtonWasClicked: function()
