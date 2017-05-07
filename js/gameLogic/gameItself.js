@@ -12,7 +12,7 @@ var velocityOfTileMoving = 15,
     jumpTimer = 0,
     background,
     enemySpeed = 50,
-    lastNumberOfPicture = 117,
+    lastNumberOfPicture = numberOfBackgroundPictures,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
     maxNumberOfEnemies = 5;
 
@@ -124,7 +124,7 @@ GameItself.prototype = {
         me.game.input.keyboard.onDownCallback = null;
         stopAllSounds();
         saveRecord();
-        this.game.state.start('MainMenu');
+        this.game.state.start('GameOver');
 	},
 
 	addTile: function(x, y)

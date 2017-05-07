@@ -2,21 +2,298 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcab764c-28cc-4d47-a9d9-4e2abbd8957c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonOffSoundSprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonOnSoundSprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sprites/buttons/buttonSettingsSprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gameLogic/settings.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dependencies/quicksort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dependencies/storage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/gameLogic/gameover.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/149.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/150.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/151.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/152.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/153.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/154.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/155.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/156.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/157.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/158.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/159.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/160.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/161.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/162.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/163.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/164.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/165.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/166.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/167.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/168.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/169.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/170.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/171.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/172.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/173.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/174.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/175.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/176.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/177.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/178.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/179.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/180.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/181.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/182.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/183.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/184.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/185.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/186.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/187.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/188.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/189.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/190.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/191.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/192.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/193.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/194.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/195.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/196.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/197.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/198.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/199.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/201.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/202.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/203.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/204.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/205.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/206.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/207.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/208.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/209.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/210.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/211.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/213.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/214.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/215.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/216.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/217.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/218.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/219.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/220.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/221.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/222.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/223.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/224.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/225.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/226.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/227.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/228.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/229.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/230.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/231.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/232.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/233.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/234.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/235.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/236.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/237.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/238.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/239.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/240.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/241.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/242.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/243.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/244.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/245.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/246.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/247.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/248.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/249.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/250.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/251.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/252.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/253.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/254.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/255.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/256.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/257.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/258.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/259.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/260.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/261.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/262.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/263.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/264.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/265.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/266.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/267.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/268.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/269.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/270.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/271.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/272.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/273.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/274.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/275.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/276.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/277.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/278.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/279.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/game/281.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/gameMenu/gameEndFirstBack.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/gameMenu/gameEndSecondBack.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/audio/gameEvents/gameEndMusic.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gameLogic/gameOver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/0.jpg" afterPath="$PROJECT_DIR$/assets/images/game/0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/1.jpg" afterPath="$PROJECT_DIR$/assets/images/game/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/10.jpg" afterPath="$PROJECT_DIR$/assets/images/game/10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/100.jpg" afterPath="$PROJECT_DIR$/assets/images/game/100.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/101.jpg" afterPath="$PROJECT_DIR$/assets/images/game/101.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/102.jpg" afterPath="$PROJECT_DIR$/assets/images/game/102.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/103.jpg" afterPath="$PROJECT_DIR$/assets/images/game/103.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/104.jpg" afterPath="$PROJECT_DIR$/assets/images/game/104.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/105.jpg" afterPath="$PROJECT_DIR$/assets/images/game/105.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/106.jpg" afterPath="$PROJECT_DIR$/assets/images/game/106.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/107.jpg" afterPath="$PROJECT_DIR$/assets/images/game/107.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/108.jpg" afterPath="$PROJECT_DIR$/assets/images/game/108.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/109.jpg" afterPath="$PROJECT_DIR$/assets/images/game/109.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/11.jpg" afterPath="$PROJECT_DIR$/assets/images/game/11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/111.jpg" afterPath="$PROJECT_DIR$/assets/images/game/111.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/112.jpg" afterPath="$PROJECT_DIR$/assets/images/game/112.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/113.jpg" afterPath="$PROJECT_DIR$/assets/images/game/113.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/114.jpg" afterPath="$PROJECT_DIR$/assets/images/game/114.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/115.jpg" afterPath="$PROJECT_DIR$/assets/images/game/115.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/116.jpg" afterPath="$PROJECT_DIR$/assets/images/game/116.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/117.jpg" afterPath="$PROJECT_DIR$/assets/images/game/117.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/118.jpg" afterPath="$PROJECT_DIR$/assets/images/game/118.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/119.jpg" afterPath="$PROJECT_DIR$/assets/images/game/119.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/12.jpg" afterPath="$PROJECT_DIR$/assets/images/game/12.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/120.jpg" afterPath="$PROJECT_DIR$/assets/images/game/120.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/121.jpg" afterPath="$PROJECT_DIR$/assets/images/game/121.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/122.jpg" afterPath="$PROJECT_DIR$/assets/images/game/122.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/123.jpg" afterPath="$PROJECT_DIR$/assets/images/game/123.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/124.jpg" afterPath="$PROJECT_DIR$/assets/images/game/124.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/125.jpg" afterPath="$PROJECT_DIR$/assets/images/game/125.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/126.jpg" afterPath="$PROJECT_DIR$/assets/images/game/126.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/127.jpg" afterPath="$PROJECT_DIR$/assets/images/game/127.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/128.jpg" afterPath="$PROJECT_DIR$/assets/images/game/128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/129.jpg" afterPath="$PROJECT_DIR$/assets/images/game/129.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/13.jpg" afterPath="$PROJECT_DIR$/assets/images/game/13.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/130.jpg" afterPath="$PROJECT_DIR$/assets/images/game/130.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/131.jpg" afterPath="$PROJECT_DIR$/assets/images/game/131.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/132.jpg" afterPath="$PROJECT_DIR$/assets/images/game/132.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/133.jpg" afterPath="$PROJECT_DIR$/assets/images/game/133.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/134.jpg" afterPath="$PROJECT_DIR$/assets/images/game/134.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/135.jpg" afterPath="$PROJECT_DIR$/assets/images/game/135.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/136.jpg" afterPath="$PROJECT_DIR$/assets/images/game/136.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/137.jpg" afterPath="$PROJECT_DIR$/assets/images/game/137.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/138.jpg" afterPath="$PROJECT_DIR$/assets/images/game/138.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/139.jpg" afterPath="$PROJECT_DIR$/assets/images/game/139.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/14.jpg" afterPath="$PROJECT_DIR$/assets/images/game/14.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/140.jpg" afterPath="$PROJECT_DIR$/assets/images/game/140.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/141.jpg" afterPath="$PROJECT_DIR$/assets/images/game/141.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/142.jpg" afterPath="$PROJECT_DIR$/assets/images/game/142.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/143.jpg" afterPath="$PROJECT_DIR$/assets/images/game/143.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/144.jpg" afterPath="$PROJECT_DIR$/assets/images/game/144.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/145.jpg" afterPath="$PROJECT_DIR$/assets/images/game/145.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/146.jpg" afterPath="$PROJECT_DIR$/assets/images/game/146.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/147.jpg" afterPath="$PROJECT_DIR$/assets/images/game/147.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/148.jpg" afterPath="$PROJECT_DIR$/assets/images/game/148.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/15.jpg" afterPath="$PROJECT_DIR$/assets/images/game/15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/16.jpg" afterPath="$PROJECT_DIR$/assets/images/game/16.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/17.jpg" afterPath="$PROJECT_DIR$/assets/images/game/17.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/18.jpg" afterPath="$PROJECT_DIR$/assets/images/game/18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/19.jpg" afterPath="$PROJECT_DIR$/assets/images/game/19.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/2.jpg" afterPath="$PROJECT_DIR$/assets/images/game/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/20.jpg" afterPath="$PROJECT_DIR$/assets/images/game/20.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/21.jpg" afterPath="$PROJECT_DIR$/assets/images/game/21.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/22.jpg" afterPath="$PROJECT_DIR$/assets/images/game/22.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/23.jpg" afterPath="$PROJECT_DIR$/assets/images/game/23.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/24.jpg" afterPath="$PROJECT_DIR$/assets/images/game/24.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/25.jpg" afterPath="$PROJECT_DIR$/assets/images/game/25.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/26.jpg" afterPath="$PROJECT_DIR$/assets/images/game/26.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/27.jpg" afterPath="$PROJECT_DIR$/assets/images/game/27.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/28.jpg" afterPath="$PROJECT_DIR$/assets/images/game/28.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/29.jpg" afterPath="$PROJECT_DIR$/assets/images/game/29.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/3.jpg" afterPath="$PROJECT_DIR$/assets/images/game/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/30.jpg" afterPath="$PROJECT_DIR$/assets/images/game/30.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/31.jpg" afterPath="$PROJECT_DIR$/assets/images/game/31.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/32.jpg" afterPath="$PROJECT_DIR$/assets/images/game/32.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/33.jpg" afterPath="$PROJECT_DIR$/assets/images/game/33.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/34.jpg" afterPath="$PROJECT_DIR$/assets/images/game/34.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/35.jpg" afterPath="$PROJECT_DIR$/assets/images/game/35.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/36.jpg" afterPath="$PROJECT_DIR$/assets/images/game/36.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/37.jpg" afterPath="$PROJECT_DIR$/assets/images/game/37.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/38.jpg" afterPath="$PROJECT_DIR$/assets/images/game/38.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/39.jpg" afterPath="$PROJECT_DIR$/assets/images/game/39.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/4.jpg" afterPath="$PROJECT_DIR$/assets/images/game/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/40.jpg" afterPath="$PROJECT_DIR$/assets/images/game/40.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/41.jpg" afterPath="$PROJECT_DIR$/assets/images/game/41.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/42.jpg" afterPath="$PROJECT_DIR$/assets/images/game/42.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/43.jpg" afterPath="$PROJECT_DIR$/assets/images/game/43.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/44.jpg" afterPath="$PROJECT_DIR$/assets/images/game/44.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/45.jpg" afterPath="$PROJECT_DIR$/assets/images/game/45.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/46.jpg" afterPath="$PROJECT_DIR$/assets/images/game/46.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/47.jpg" afterPath="$PROJECT_DIR$/assets/images/game/47.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/48.jpg" afterPath="$PROJECT_DIR$/assets/images/game/48.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/49.jpg" afterPath="$PROJECT_DIR$/assets/images/game/49.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/5.jpg" afterPath="$PROJECT_DIR$/assets/images/game/5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/50.jpg" afterPath="$PROJECT_DIR$/assets/images/game/50.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/51.jpg" afterPath="$PROJECT_DIR$/assets/images/game/51.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/52.jpg" afterPath="$PROJECT_DIR$/assets/images/game/52.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/53.jpg" afterPath="$PROJECT_DIR$/assets/images/game/53.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/54.jpg" afterPath="$PROJECT_DIR$/assets/images/game/54.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/55.jpg" afterPath="$PROJECT_DIR$/assets/images/game/55.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/56.jpg" afterPath="$PROJECT_DIR$/assets/images/game/56.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/57.jpg" afterPath="$PROJECT_DIR$/assets/images/game/57.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/58.jpg" afterPath="$PROJECT_DIR$/assets/images/game/58.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/59.jpg" afterPath="$PROJECT_DIR$/assets/images/game/59.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/6.jpg" afterPath="$PROJECT_DIR$/assets/images/game/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/60.jpg" afterPath="$PROJECT_DIR$/assets/images/game/60.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/61.jpg" afterPath="$PROJECT_DIR$/assets/images/game/61.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/62.jpg" afterPath="$PROJECT_DIR$/assets/images/game/62.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/63.jpg" afterPath="$PROJECT_DIR$/assets/images/game/63.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/64.jpg" afterPath="$PROJECT_DIR$/assets/images/game/64.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/65.jpg" afterPath="$PROJECT_DIR$/assets/images/game/65.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/66.jpg" afterPath="$PROJECT_DIR$/assets/images/game/66.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/67.jpg" afterPath="$PROJECT_DIR$/assets/images/game/67.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/68.jpg" afterPath="$PROJECT_DIR$/assets/images/game/68.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/69.jpg" afterPath="$PROJECT_DIR$/assets/images/game/69.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/7.jpg" afterPath="$PROJECT_DIR$/assets/images/game/7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/70.jpg" afterPath="$PROJECT_DIR$/assets/images/game/70.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/71.jpg" afterPath="$PROJECT_DIR$/assets/images/game/71.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/72.jpg" afterPath="$PROJECT_DIR$/assets/images/game/72.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/73.jpg" afterPath="$PROJECT_DIR$/assets/images/game/73.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/74.jpg" afterPath="$PROJECT_DIR$/assets/images/game/74.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/75.jpg" afterPath="$PROJECT_DIR$/assets/images/game/75.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/76.jpg" afterPath="$PROJECT_DIR$/assets/images/game/76.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/77.jpg" afterPath="$PROJECT_DIR$/assets/images/game/77.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/78.jpg" afterPath="$PROJECT_DIR$/assets/images/game/78.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/79.jpg" afterPath="$PROJECT_DIR$/assets/images/game/79.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/8.jpg" afterPath="$PROJECT_DIR$/assets/images/game/8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/80.jpg" afterPath="$PROJECT_DIR$/assets/images/game/80.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/81.jpg" afterPath="$PROJECT_DIR$/assets/images/game/81.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/82.jpg" afterPath="$PROJECT_DIR$/assets/images/game/82.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/83.jpg" afterPath="$PROJECT_DIR$/assets/images/game/83.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/84.jpg" afterPath="$PROJECT_DIR$/assets/images/game/84.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/85.jpg" afterPath="$PROJECT_DIR$/assets/images/game/85.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/86.jpg" afterPath="$PROJECT_DIR$/assets/images/game/86.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/87.jpg" afterPath="$PROJECT_DIR$/assets/images/game/87.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/88.jpg" afterPath="$PROJECT_DIR$/assets/images/game/88.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/89.jpg" afterPath="$PROJECT_DIR$/assets/images/game/89.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/9.jpg" afterPath="$PROJECT_DIR$/assets/images/game/9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/90.jpg" afterPath="$PROJECT_DIR$/assets/images/game/90.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/91.jpg" afterPath="$PROJECT_DIR$/assets/images/game/91.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/92.jpg" afterPath="$PROJECT_DIR$/assets/images/game/92.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/93.jpg" afterPath="$PROJECT_DIR$/assets/images/game/93.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/94.jpg" afterPath="$PROJECT_DIR$/assets/images/game/94.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/95.jpg" afterPath="$PROJECT_DIR$/assets/images/game/95.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/96.jpg" afterPath="$PROJECT_DIR$/assets/images/game/96.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/97.jpg" afterPath="$PROJECT_DIR$/assets/images/game/97.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/98.jpg" afterPath="$PROJECT_DIR$/assets/images/game/98.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/game/99.jpg" afterPath="$PROJECT_DIR$/assets/images/game/99.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/dependencies/config.js" afterPath="$PROJECT_DIR$/js/dependencies/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/achievements.js" afterPath="$PROJECT_DIR$/js/gameLogic/achievements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/boot.js" afterPath="$PROJECT_DIR$/js/gameLogic/boot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/gameItself.js" afterPath="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/mainMenu.js" afterPath="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/preload.js" afterPath="$PROJECT_DIR$/js/gameLogic/preload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/gameLogic/gametitle.js" afterPath="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/gameLogic/main.js" afterPath="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/sideJS/videoControl.js" afterPath="$PROJECT_DIR$/js/miscellaneousJS/videoControl.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +308,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gameOver.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/gameLogic/gameOver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -53,9 +340,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>until</find>
-      <find>attack</find>
-      <find>enemy</find>
       <find>me.enem</find>
       <find>me.enemies</find>
       <find>Until</find>
@@ -83,6 +367,9 @@
       <find>start</find>
       <find>state.star</find>
       <find>basil</find>
+      <find>me.timer</find>
+      <find>change</find>
+      <find>background</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,20 +393,21 @@
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js" />
         <option value="$PROJECT_DIR$/js/dependencies/require.js" />
         <option value="$PROJECT_DIR$/js/dependencies/storage.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/css/main.less" />
         <option value="$PROJECT_DIR$/js/gameLogic/main.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/gametitle.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/gameover.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
-        <option value="$PROJECT_DIR$/js/dependencies/config.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
-        <option value="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/achievements.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/boot.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/settings.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/mainMenu.js" />
+        <option value="$PROJECT_DIR$/js/dependencies/config.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/gameOver.js" />
       </list>
     </option>
   </component>
@@ -161,9 +449,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,7 +506,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sprites" />
+              <option name="myItemId" value="audio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JumperKisame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JumperKisame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameEvents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -233,17 +543,17 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../changeNameOfImagesForWeb" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.9.5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\gameEvents" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\gameMenu" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\game" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\sprites\buttons" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\kisame" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\tiles" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\buttonClickSounds" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
@@ -681,16 +991,19 @@
       <workItem from="1491926314554" duration="2536000" />
       <workItem from="1491940663397" duration="2889000" />
       <workItem from="1492024242240" duration="12519000" />
-      <workItem from="1492104268785" duration="6387000" />
+      <workItem from="1492104268785" duration="6807000" />
+      <workItem from="1492896056822" duration="22000" />
+      <workItem from="1494163026287" duration="4446000" />
+      <workItem from="1494167702472" duration="2353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83829000" />
+    <option name="totallyTimeSpent" value="91070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -698,7 +1011,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -707,7 +1020,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phaser Chains" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -732,54 +1045,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6681">
-          <caret line="393" column="46" lean-forward="false" selection-start-line="393" selection-start-column="46" selection-end-line="393" selection-end-column="46" />
-          <folding>
-            <element signature="e#2162#2274#0" expanded="false" />
-            <element signature="e#2311#2446#0" expanded="false" />
-            <element signature="n#!!block;n#beIdle#0" expanded="false" />
-            <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
-            <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#populateWithSound#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomAttack#0" expanded="false" />
-            <element signature="n#!!block;n#itIs#0" expanded="false" />
-            <element signature="n#!!block;n#jumpRight#0" expanded="false" />
-            <element signature="n#!!block;n#stopAllSounds#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -798,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530315">
           <caret line="31195" column="0" lean-forward="false" selection-start-line="31195" selection-start-column="0" selection-end-line="31195" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +1119,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sideJS/videoControl.js">
+    <entry file="file://$PROJECT_DIR$/js/miscellaneousJS/videoControl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -888,13 +1160,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/basil.js/test/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/dependencies/quicksort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dependencies/quicksort.js" />
     <entry file="file://$PROJECT_DIR$/assets/audio/buttonClickSounds/menuButtonClick.wav">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -938,79 +1204,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dependencies/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dependencies/phaserCheckBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dependencies/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="34" column="110" lean-forward="false" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="629" column="6" lean-forward="false" selection-start-line="629" selection-start-column="6" selection-end-line="629" selection-end-column="6" />
-          <folding>
-            <element signature="e#2162#2274#0" expanded="false" />
-            <element signature="e#2311#2446#0" expanded="false" />
-            <element signature="n#!!block;n#beIdle#0" expanded="false" />
-            <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
-            <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#populateWithSound#0" expanded="false" />
-            <element signature="n#!!block;n#getRandomAttack#0" expanded="false" />
-            <element signature="n#!!block;n#itIs#0" expanded="false" />
-            <element signature="n#!!block;n#jumpRight#0" expanded="false" />
-            <element signature="n#!!block;n#stopAllSounds#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dependencies/storage.js" />
+    <entry file="file://$PROJECT_DIR$/js/dependencies/phaserCheckBox.js" />
     <entry file="file://$PROJECT_DIR$/js/gameLogic/achievements.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,34 +1228,106 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/mainMenu.js">
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/boot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dependencies/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/boot.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="425">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gameLogic/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/gameMenu/gameBack.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/mainMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="89" column="18" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="18" />
+          <folding>
+            <element signature="e#2185#2297#0" expanded="false" />
+            <element signature="n#!!block;n#beIdle#0" expanded="false" />
+            <element signature="n#!!block;n#jumpHasToOccur#0" expanded="false" />
+            <element signature="n#!!block;n#keyEqualTo#0" expanded="false" />
+            <element signature="n#!!block;n#getRandomEnemy#0" expanded="false" />
+            <element signature="n#!!block;n#populateWithSound#0" expanded="false" />
+            <element signature="n#!!block;n#getRandomAttack#0" expanded="false" />
+            <element signature="n#!!block;n#itIs#0" expanded="false" />
+            <element signature="n#!!block;n#jumpRight#0" expanded="false" />
+            <element signature="n#!!block;n#stopAllSounds#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/gameMenu/gameEndSecondBack.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/gameMenu/gameEndFirstBack.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/audio/gameEvents/gameEndMusic.mp3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="58" column="86" lean-forward="false" selection-start-line="58" selection-start-column="86" selection-end-line="58" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameOver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>

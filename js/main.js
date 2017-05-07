@@ -1,5 +1,7 @@
 var filesToPreloadFirst = ["phaser", "basil"],
-    filesToPreloadSecond = ["boot", "preload", "mainMenu", "gameItself", "achievements", "settings", "videocontrol"];
+    filesToPreloadSecond = ["boot", "preload", "mainMenu", "gameItself", "achievements", "settings", "videocontrol", "gameOver"];
+
+var numberOfBackgroundPictures = 281;
 
 requirejs(["config"], function()
 {
@@ -30,6 +32,7 @@ function setStatesFor(game)
     game.state.add("Achievements", Achievements);
     game.state.add("Settings", Settings);
     game.state.add("GameItself", GameItself);
+    game.state.add("GameOver", GameOver);
 }
 
 function startThe(game)

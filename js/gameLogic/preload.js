@@ -7,6 +7,7 @@ Preload.prototype = {
         this.preloadPlayerAndEnemies();
         this.preloadButtons();
         this.preloadBackgroundsTiles();
+        this.preloadMusicAndSounds();
     },
 
     preloadPlayerAndEnemies: function()
@@ -45,11 +46,17 @@ Preload.prototype = {
         for(var i = 0; i <= 8; i++)
         {this.game.load.image('tile' + i, "assets/tiles/" + i + ".png");}
 
-
         this.game.load.image('gameMenuBack', 'assets/images/gameMenu/gameBack.png');
+        this.game.load.image('gameEndFirstBack', 'assets/images/gameMenu/gameEndFirstBack.jpg');
+        this.game.load.image('gameEndSecondBack', 'assets/images/gameMenu/gameEndSecondBack.jpg');
 
-        for(var i = 0; i <= 117; i++)
+        for(var i = 0; i <= numberOfBackgroundPictures; i++)
         {this.game.load.image(i + "", "assets/images/game/" + i + ".jpg");}
+    },
+
+    preloadMusicAndSounds: function()
+    {
+        this.game.load.audio('gameEndMusic', 'assets/audio/gameEvents/gameEndMusic.mp3');
     },
 
 	create: function()
