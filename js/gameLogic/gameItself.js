@@ -3,7 +3,6 @@ var GameItself = function(game){
 };
 
 var velocityOfTileMoving = 15,
-    speedOfTileGenerating = 15000,
     speedOfPlayerMovingRightLeft = 150,
     facing = 'left',
     sizeOfPlayer = 0.5,
@@ -14,13 +13,20 @@ var velocityOfTileMoving = 15,
     enemySpeed = 50,
     lastNumberOfPicture = numberOfBackgroundPictures,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
-    maxNumberOfEnemies = 5;
+    maxNumberOfEnemies = 4,
+    previousHole,
+    platformsWereJustAdded = false;
 
 GameItself.prototype = {
 
 	create: function()
     {
+		resetAllGlobalVariables();
+
+        console.log(maxNumberOfEnemies);
 		me = this;
+
+
 
 		me.gameIsRunning = true;
 
@@ -44,7 +50,6 @@ GameItself.prototype = {
 		me.game.physics.startSystem(Phaser.Physics.ARCADE);
 
 		//Add a platforms group to hold all of our tiles, and create a bunch of them
-        // me.platforms = me.game.add.physicsGroup();
 		me.platforms = me.game.add.group();
 		me.platforms.enableBody = true;
 		me.platforms.createMultiple(100, tileStyle);
@@ -61,12 +66,9 @@ GameItself.prototype = {
 		//Create the score label
 		me.createScore();
 
-		//Add a platform every speedOfTileGenerating seconds
-		me.timer = game.time.events.loop(speedOfTileGenerating, me.addPlatform, me);
-
         game.time.events.loop(Phaser.Timer.SECOND * 40, me.changePicture, me);
 
-        game.time.events.loop(Phaser.Timer.SECOND * 50, me.incrementLevelDifficulty, me);
+        game.time.events.loop(Phaser.Timer.SECOND * 20, me.incrementLevelDifficulty, me);
 
 	    //Enable cursor keys so we can create some controls
 	    me.cursors = me.game.input.keyboard.createCursorKeys();
@@ -79,9 +81,19 @@ GameItself.prototype = {
 
     incrementLevelDifficulty: function()
     {
-        maxNumberOfEnemies++;
-        velocityOfTileMoving *= 0.9;
-        speedOfTileGenerating *= 0.9;
+        maxNumberOfEnemies+=2;
+        velocityOfTileMoving *= 1.4;
+
+        this.speedUpAllExistingPlatforms(me.platforms.children);
+    },
+
+    speedUpAllExistingPlatforms: function(tiles)
+    {
+        tiles.forEach(function(tile)
+        {
+            tile.body.velocity.y = velocityOfTileMoving;
+        });
+
     },
 
     changePicture: function()
@@ -139,8 +151,20 @@ GameItself.prototype = {
 
 	    //When the tile leaves the screen, kill it
 	    tile.checkWorldBounds = true;
-	    tile.outOfBoundsKill = true;	
+	    tile.outOfBoundsKill = true;
+
+	    tile.events.onOutOfBounds.add(this.addPlatformsAfterSomeTime, this);
 	},
+
+    addPlatformsAfterSomeTime: function()
+    {
+        if(platformsWereJustAdded)
+        {return;}
+
+        platformsWereJustAdded = true;
+        me.addPlatform();
+        setTimeout(function(){platformsWereJustAdded = false;}, 400);
+    },
 
 	addPlatform: function(y)
     {
@@ -156,7 +180,18 @@ GameItself.prototype = {
 		var tilesNeeded = Math.ceil(me.game.world.width / me.tileWidth);
 
 		//Add a hole randomly somewhere
-	    var hole = Math.floor(Math.random() * (tilesNeeded - 3)) + 1;
+        var hole;
+        if(previousHole)
+        {
+            hole = Math.floor(Math.random() * (tilesNeeded - 3)) + 1;
+	        while(hole == previousHole)
+            {hole = Math.floor(Math.random() * (tilesNeeded - 3)) + 1;}
+        }
+        else
+        {
+            hole = Math.floor(Math.random() * (tilesNeeded - 3)) + 1;
+        }
+        previousHole = hole;
 
 	    //Keep creating tiles next to each other until we have an entire row
 	    //Don't add tiles where the random hole is
@@ -223,7 +258,7 @@ GameItself.prototype = {
 	incrementScore: function()
     {
 		me.score += 1;
-		me.scoreLabel.text = me.score; 		
+		me.scoreLabel.text = me.score;
 	},
 };
 
@@ -291,15 +326,6 @@ function somethingWasPressed(keyCode)
 
     if(keyEqualTo(keyCode, "m") || keyEqualTo(keyCode, "ь") || keyEqualTo(keyCode, "M") || keyEqualTo(keyCode, "Ь"))
     {animateAttackMagic();}
-
-    if(keyEqualTo(keyCode, "t"))
-    {
-        me.enemies.children.forEach(function(enemy)
-        {
-            var difBetweenEnemyAndPlayerVertical = enemy.y - me.playerForAnimation.y;
-            console.log(difBetweenEnemyAndPlayerVertical);
-        });
-    }
 }
 
 function keyEqualTo(keyCode, key)
@@ -630,6 +656,16 @@ function saveRecord()
    basil.set(key, arrOfAchievements);
 };
 
+function resetAllGlobalVariables()
+{
+        velocityOfTileMoving = 15,
+        speedOfPlayerMovingRightLeft = 150,
+        facing = 'left',
+        jumpTimer = 0,
+        maxNumberOfEnemies = 4,
+        previousHole = null;
+        platformsWereJustAdded = false;
+}
 
 
 
