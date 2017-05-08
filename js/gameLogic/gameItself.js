@@ -13,7 +13,7 @@ var velocityOfTileMoving = 15,
     enemySpeed = 50,
     lastNumberOfPicture = numberOfBackgroundPictures,
     kisameAttackAud, kisameAttackMagicAud, kisameJumpAud, kisameRunAud,
-    maxNumberOfEnemies = 4,
+    maxNumberOfEnemies = 2,
     previousHole,
     platformsWereJustAdded = false;
 
@@ -23,10 +23,7 @@ GameItself.prototype = {
     {
 		resetAllGlobalVariables();
 
-        console.log(maxNumberOfEnemies);
 		me = this;
-
-
 
 		me.gameIsRunning = true;
 
@@ -81,7 +78,7 @@ GameItself.prototype = {
 
     incrementLevelDifficulty: function()
     {
-        maxNumberOfEnemies+=2;
+        maxNumberOfEnemies+=1;
         velocityOfTileMoving *= 1.4;
 
         this.speedUpAllExistingPlatforms(me.platforms.children);
