@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcab764c-28cc-4d47-a9d9-4e2abbd8957c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/gameItself.js" afterPath="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/audio/kisame/kisameRun.mp3" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/audio/kisame/kisameRun.wav" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/audio/buttonClickSounds/hoverButtonSound.wav" afterPath="$PROJECT_DIR$/assets/audio/buttonClickSounds/hoverButtonSound.wav" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameLogic/preload.js" afterPath="$PROJECT_DIR$/js/gameLogic/preload.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gameItself.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -49,7 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>checkForPlayerAttack</find>
       <find>enemy.notFight</find>
       <find>jump</find>
       <find>dif</find>
@@ -79,6 +72,7 @@
       <find>incrementLe</find>
       <find>speedOfPlayerMovingRightLeft</find>
       <find>console.log</find>
+      <find>kisameRun</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,9 +108,9 @@
         <option value="$PROJECT_DIR$/js/dependencies/config.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/gameOver.js" />
         <option value="$PROJECT_DIR$/js/gameLogic/gameItself.js" />
+        <option value="$PROJECT_DIR$/js/gameLogic/preload.js" />
       </list>
     </option>
   </component>
@@ -221,17 +215,17 @@
     <property name="javascript.nodejs.core.library.configured.version" value="6.9.5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\kisame" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\buttonClickSounds" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\gameEvents" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\gameMenu" />
+      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\game" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio" />
       <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\webSite" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\audio\gameEvents" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\gameMenu" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\images\game" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\assets\sprites\buttons" />
-      <recent name="E:\Cloud\JavaIdea\JumperKisame\js\dependencies" />
     </key>
   </component>
   <component name="RunManager">
@@ -669,12 +663,13 @@
       <workItem from="1494163026287" duration="4446000" />
       <workItem from="1494167702472" duration="2353000" />
       <workItem from="1494229910597" duration="3952000" />
-      <workItem from="1494234304460" duration="159000" />
+      <workItem from="1494234304460" duration="690000" />
+      <workItem from="1494505033174" duration="1373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95181000" />
+    <option name="totallyTimeSpent" value="97085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -729,13 +724,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -830,13 +818,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/basil.js/test/index.html" />
     <entry file="file://$PROJECT_DIR$/js/dependencies/quicksort.js" />
     <entry file="file://$PROJECT_DIR$/assets/audio/buttonClickSounds/menuButtonClick.wav">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/audio/buttonClickSounds/hoverButtonSound.wav">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -953,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="58" column="86" lean-forward="false" selection-start-line="58" selection-start-column="86" selection-end-line="58" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gameLogic/gameOver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -975,18 +949,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameLogic/gameItself.js">
+    <entry file="file://$PROJECT_DIR$/assets/audio/buttonClickSounds/hoverButtonSound.wav">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/audio/kisame/kisameRun.mp3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameLogic/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
