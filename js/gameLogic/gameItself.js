@@ -659,7 +659,7 @@ function resetAllGlobalVariables()
         speedOfPlayerMovingRightLeft = 150,
         facing = 'left',
         jumpTimer = 0,
-        maxNumberOfEnemies = 4,
+        maxNumberOfEnemies = 2,
         previousHole = null;
         platformsWereJustAdded = false;
 }

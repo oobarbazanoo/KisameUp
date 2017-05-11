@@ -21,7 +21,7 @@ Preload.prototype = {
         this.game.load.audio('kisameJump', 'assets/audio/kisame/kisameJump.wav');
         this.game.load.audio('kisameRun', 'assets/audio/kisame/kisameRun.mp3');
 
-        this.game.load.audio('narutoRun', 'assets/audio/naruto/narutoRun.wav');
+        this.game.load.audio('narutoRun', 'assets/audio/naruto/narutoRun.mp3');
 
         this.game.load.audio('kabutoRun', 'assets/audio/kabuto/kabutoRun.wav');
     },
